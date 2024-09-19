@@ -1,0 +1,17 @@
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Service\bin\Debug\net8.0\SchoolSystem_Service.deps.json
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Service\bin\Debug\net8.0\SchoolSystem_Service.dll
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Service\bin\Debug\net8.0\SchoolSystem_Service.pdb
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Service\bin\Debug\net8.0\SchoolSystem_Infrastructure.dll
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Service\bin\Debug\net8.0\SchoolSystem_Infrastructure.pdb
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Service\obj\Debug\net8.0\SchoolSystem_Service.csproj.AssemblyReference.cache
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Service\obj\Debug\net8.0\SchoolSystem_Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Service\obj\Debug\net8.0\SchoolSystem_Service.AssemblyInfoInputs.cache
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Service\obj\Debug\net8.0\SchoolSystem_Service.AssemblyInfo.cs
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Service\obj\Debug\net8.0\SchoolSystem_Service.csproj.CoreCompileInputs.cache
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Service\obj\Debug\net8.0\SchoolSy.C1467948.Up2Date
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Service\obj\Debug\net8.0\SchoolSystem_Service.dll
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Service\obj\Debug\net8.0\refint\SchoolSystem_Service.dll
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Service\obj\Debug\net8.0\SchoolSystem_Service.pdb
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Service\obj\Debug\net8.0\ref\SchoolSystem_Service.dll
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Service\bin\Debug\net8.0\SchoolSystem_Data.dll
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Service\bin\Debug\net8.0\SchoolSystem_Data.pdb

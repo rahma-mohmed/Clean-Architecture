@@ -1,0 +1,17 @@
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Infrastructure\bin\Debug\net8.0\SchoolSystem_Infrastructure.deps.json
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Infrastructure\bin\Debug\net8.0\SchoolSystem_Infrastructure.runtimeconfig.json
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Infrastructure\bin\Debug\net8.0\SchoolSystem_Infrastructure.dll
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Infrastructure\bin\Debug\net8.0\SchoolSystem_Infrastructure.pdb
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Infrastructure\obj\Debug\net8.0\SchoolSystem_Infrastructure.csproj.AssemblyReference.cache
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Infrastructure\obj\Debug\net8.0\SchoolSystem_Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Infrastructure\obj\Debug\net8.0\SchoolSystem_Infrastructure.AssemblyInfoInputs.cache
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Infrastructure\obj\Debug\net8.0\SchoolSystem_Infrastructure.AssemblyInfo.cs
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Infrastructure\obj\Debug\net8.0\SchoolSystem_Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Infrastructure\obj\Debug\net8.0\SchoolSy.538490E9.Up2Date
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Infrastructure\obj\Debug\net8.0\SchoolSystem_Infrastructure.dll
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Infrastructure\obj\Debug\net8.0\refint\SchoolSystem_Infrastructure.dll
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Infrastructure\obj\Debug\net8.0\SchoolSystem_Infrastructure.pdb
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Infrastructure\obj\Debug\net8.0\SchoolSystem_Infrastructure.genruntimeconfig.cache
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Infrastructure\obj\Debug\net8.0\ref\SchoolSystem_Infrastructure.dll
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Infrastructure\bin\Debug\net8.0\SchoolSystem_Data.dll
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Infrastructure\bin\Debug\net8.0\SchoolSystem_Data.pdb

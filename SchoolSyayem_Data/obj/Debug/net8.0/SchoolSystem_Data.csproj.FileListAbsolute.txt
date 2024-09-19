@@ -1,0 +1,11 @@
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSyayem_Data\bin\Debug\net8.0\SchoolSystem_Data.deps.json
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSyayem_Data\bin\Debug\net8.0\SchoolSystem_Data.dll
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSyayem_Data\bin\Debug\net8.0\SchoolSystem_Data.pdb
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSyayem_Data\obj\Debug\net8.0\SchoolSystem_Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSyayem_Data\obj\Debug\net8.0\SchoolSystem_Data.AssemblyInfoInputs.cache
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSyayem_Data\obj\Debug\net8.0\SchoolSystem_Data.AssemblyInfo.cs
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSyayem_Data\obj\Debug\net8.0\SchoolSystem_Data.csproj.CoreCompileInputs.cache
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSyayem_Data\obj\Debug\net8.0\SchoolSystem_Data.dll
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSyayem_Data\obj\Debug\net8.0\refint\SchoolSystem_Data.dll
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSyayem_Data\obj\Debug\net8.0\SchoolSystem_Data.pdb
+C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSyayem_Data\obj\Debug\net8.0\ref\SchoolSystem_Data.dll

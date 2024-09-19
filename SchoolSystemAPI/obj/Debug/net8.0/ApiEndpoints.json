@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "SchoolSystemAPI.Controllers.StudentController",
+    "Method": "GetStudentByIdTask",
+    "RelativePath": "api/Student/Api/V1/Student/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolSystemAPI.Controllers.StudentController",
+    "Method": "GetStudentTask",
+    "RelativePath": "api/Student/Api/V1/Student/List",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

@@ -7,7 +7,7 @@ using SchoolSystem_Core.Basis;
 
 namespace SchoolSystem_Core.Features.Students.Queries.Handlers
 {
-    public class StudentHandler : ResponseHandler,
+    public class StudentQueryHandler : ResponseHandler,
                                  IRequestHandler<GetStudentListQuery, Response<List<GetStudentListResponse>>>,
                                  IRequestHandler<GetStudentByIdQuery, Response<GetStudentResponse>>
     {
@@ -17,7 +17,7 @@ namespace SchoolSystem_Core.Features.Students.Queries.Handlers
         #endregion
 
         #region Constructor
-        public StudentHandler(IStudentRepository studentService , IMapper mapper)
+        public StudentQueryHandler(IStudentRepository studentService , IMapper mapper)
         {
             _studentService = studentService;
             _mapper = mapper;

@@ -28,7 +28,7 @@ namespace SchoolSystem_Core.Basis
                 Data = entity,
                 StatusCode = System.Net.HttpStatusCode.OK,
                 Succeeded = true,
-                Message = "Added Successfully",
+                Message = "Success",
                 Meta = Meta
             };
         }
@@ -51,7 +51,17 @@ namespace SchoolSystem_Core.Basis
             };
         }
 
-        public Response<T> NotFound<T>(string message = null)
+		public Response<T> UnProcessableEntity<T>(string Message = null)
+		{
+			return new Response<T>()
+			{
+				StatusCode = System.Net.HttpStatusCode.UnprocessableEntity,
+				Succeeded = false,
+				Message = Message == null ? "UnProcessable Entity" : Message
+			};
+		}
+
+		public Response<T> NotFound<T>(string message = null)
         {
             return new Response<T>()
             {

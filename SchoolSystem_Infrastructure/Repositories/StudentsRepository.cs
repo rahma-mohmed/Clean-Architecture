@@ -14,13 +14,13 @@ namespace SchoolSystem_Infrastructure.Repositories
     public class StudentsRepository: GenericRepositoryAsync<Student>,IStudentRepository
     {
         #region Fields
-        private readonly DbSet<Student> _dBContext;
+        private readonly DbSet<Student> _studentContext;
         #endregion
 
         #region Constructor
         public StudentsRepository(ApplicationDBContext dBContext):base(dBContext)
         {
-            _dBContext = dBContext.Set<Student>();
+			_studentContext = dBContext.Set<Student>();
         }
 
         #endregion
@@ -29,7 +29,7 @@ namespace SchoolSystem_Infrastructure.Repositories
 
         public async Task<List<Student>> GetStudentListAsync()
         {
-            return await _dBContext.Include(s => s.Departments).ToListAsync();
+            return await _studentContext.Include(s => s.Departments).ToListAsync();
         }
 
         #endregion

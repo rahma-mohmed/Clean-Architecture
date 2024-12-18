@@ -38,8 +38,10 @@ namespace SchoolSystem_Core.Features.Students.Queries.Handlers
 		public async Task<Response<List<GetStudentListResponse>>> Handle(GetStudentListQuery request, CancellationToken cancellationToken)
 		{
 			var studentList = await _studentService.GetAllStudentsAsync();
-			var res = _mapper.Map<List<GetStudentListResponse>>(studentList);
-			return Success(res);
+			var studentListMapper = _mapper.Map<List<GetStudentListResponse>>(studentList);
+			var res = Success(studentListMapper);
+			res.Meta = new { Count = studentListMapper.Count };
+			return res;
 		}
 
 		public async Task<Response<GetStudentResponse>> Handle(GetStudentByIdQuery request, CancellationToken cancellationToken)
@@ -57,13 +59,13 @@ namespace SchoolSystem_Core.Features.Students.Queries.Handlers
 		{
 			//replace Mapping => Expression fast access to DB , Func (linq) => Delegate need to translate to make DB understand it so use Expression
 			Expression<Func<Student, GetStudentPagintedListResponse>> expression =
-				e => new GetStudentPagintedListResponse(e.Id, e.NameAr, e.Address, e.Departments.DNameAr);
+				e => new GetStudentPagintedListResponse(e.Id, e.GetLocalized(e.NameAr, e.NameEn), e.Address, e.GetLocalized(e.Departments.DNameAr, e.Departments.DNameEn));
 
 			//var querable = _studentService.GetStudentsQuerable();
 			var FilterQuery = _studentService.FilterStudentPagination(request.OrderBy, request.Search);
 			var pagintedList = await FilterQuery.Select(expression).ToPaginatedListAsync(request.PageNumber, request.PageSize);
+			pagintedList.Meta = new { Count = pagintedList.Data.Count };
 			return pagintedList;
-
 		}
 		#endregion
 	}

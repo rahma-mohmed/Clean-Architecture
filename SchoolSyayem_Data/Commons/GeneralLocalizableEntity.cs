@@ -8,13 +8,13 @@ namespace SchoolSystem_Data.Commons
 		{
 			CultureInfo culture = Thread.CurrentThread.CurrentCulture;
 
-			if (culture.TwoLetterISOLanguageName.ToLower().Equals("ar"))
+			if (culture.TwoLetterISOLanguageName.ToLower().Equals("en"))
 			{
-				return textAr;
+				return textEn;
 			}
 			else
 			{
-				return textEn;
+				return textAr;
 			}
 		}
 	}

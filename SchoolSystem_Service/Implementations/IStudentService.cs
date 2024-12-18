@@ -1,4 +1,5 @@
 ﻿using SchoolSystem_Data.Entities;
+using SchoolSystem_Data.Helper;
 
 namespace SchoolSystem_Service.Implementations
 {
@@ -12,5 +13,7 @@ namespace SchoolSystem_Service.Implementations
 		public Task<bool> IsNameExistExcludeSelf(string name, int id);
 		public Task<string> EditAsync(Student student);
 		public Task<string> DeleteAsync(Student student);
+		public IQueryable<Student> GetStudentsQuerable();
+		public IQueryable<Student> FilterStudentPagination(StudentOrderingEnum order, string search);
 	}
 }

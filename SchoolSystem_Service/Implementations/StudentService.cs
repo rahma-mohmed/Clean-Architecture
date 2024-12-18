@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SchoolSystem_Data.Entities;
+using SchoolSystem_Data.Helper;
 using SchoolSystem_Infrastructure.IRepositories;
 
 namespace SchoolSystem_Service.Implementations
@@ -94,6 +95,41 @@ namespace SchoolSystem_Service.Implementations
 										   .Where(x => x.Id == id)
 										   .FirstOrDefault();
 			return student;
+		}
+
+		public IQueryable<Student> GetStudentsQuerable()
+		{
+			return _studentRepository.GetTableNoTracking().Include(x => x.Departments).AsQueryable();
+		}
+
+		public IQueryable<Student> FilterStudentPagination(StudentOrderingEnum order, string search)
+		{
+			var querable = _studentRepository.GetTableNoTracking().Include(x => x.Departments).AsQueryable();
+			if (search != null)
+			{
+				querable = querable.Where(x => x.Name.Contains(search) || x.Address.Contains(search));
+			}
+
+			switch (order)
+			{
+				case StudentOrderingEnum.Id:
+					querable = querable.OrderBy(x => x.Id);
+					break;
+				case StudentOrderingEnum.Name:
+					querable = querable.OrderBy(x => x.Name);
+					break;
+				case StudentOrderingEnum.Address:
+					querable = querable = querable.OrderBy(x => x.Address);
+					break;
+				case StudentOrderingEnum.DepartmentName:
+					querable = querable.OrderBy(x => x.Departments.DName);
+					break;
+				default:
+					querable = querable.OrderBy(x => x.Id);
+					break;
+			}
+
+			return querable;
 		}
 		#endregion
 	}

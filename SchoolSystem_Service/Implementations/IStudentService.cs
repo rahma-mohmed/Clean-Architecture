@@ -2,10 +2,11 @@
 
 namespace SchoolSystem_Service.Implementations
 {
-    public interface IStudentService
-    {
-        public Task<List<Student>> GetAllStudentsAsync();
-        public Task<Student> GetStudentByIdAsync(int id);
-        public Task<string> AddAsync(Student student); 
-    }
+	public interface IStudentService
+	{
+		public Task<List<Student>> GetAllStudentsAsync();
+		public Task<Student> GetStudentByIdAsync(int id);
+		public Task<string> AddAsync(Student student);
+		public Task<bool> IsNameExist(string name);
+	}
 }

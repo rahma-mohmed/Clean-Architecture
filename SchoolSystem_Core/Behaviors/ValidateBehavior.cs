@@ -1,5 +1,6 @@
 ﻿using FluentValidation;
 using MediatR;
+using Microsoft.Extensions.Localization;
 
 
 /* Handle Validation */
@@ -9,10 +10,12 @@ namespace SchoolSystem_Core.Behaviors
 	   where TRequest : IRequest<TResponse>
 	{
 		private readonly IEnumerable<IValidator<TRequest>> _validators;
+		private readonly IStringLocalizer<SharedResources.SharedResources> _stringLocalizer;
 
-		public ValidationBehavior(IEnumerable<IValidator<TRequest>> validators)
+		public ValidationBehavior(IEnumerable<IValidator<TRequest>> validators, IStringLocalizer<SharedResources.SharedResources> stringLocalizer)
 		{
 			_validators = validators;
+			_stringLocalizer = stringLocalizer;
 		}
 
 		public async Task<TResponse> Handle(TRequest request, RequestHandlerDelegate<TResponse> next, CancellationToken cancellationToken)
@@ -25,7 +28,7 @@ namespace SchoolSystem_Core.Behaviors
 
 				if (failures.Count != 0)
 				{
-					var message = failures.Select(x => x.PropertyName + ": " + x.ErrorMessage).FirstOrDefault();
+					var message = failures.Select(x => _stringLocalizer[$"{x.PropertyName}"] + ": " + _stringLocalizer[$"{x.ErrorMessage}"]).FirstOrDefault();
 
 					throw new ValidationException(message); //ErrorHandlerMiddleware
 

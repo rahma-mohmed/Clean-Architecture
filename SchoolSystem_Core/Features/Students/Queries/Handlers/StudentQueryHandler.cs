@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
 using MediatR;
+using Microsoft.Extensions.Localization;
 using SchoolSystem_Core.Basis;
 using SchoolSystem_Core.Features.Students.Queries.Models;
 using SchoolSystem_Core.Features.Students.Queries.Response;
+using SchoolSystem_Core.SharedResources;
 using SchoolSystem_Core.Wrapper;
 using SchoolSystem_Data.Entities;
 using SchoolSystem_Service.Implementations;
@@ -19,13 +21,16 @@ namespace SchoolSystem_Core.Features.Students.Queries.Handlers
 		#region Fields
 		private readonly IStudentService _studentService;
 		private readonly IMapper _mapper;
+		private readonly IStringLocalizer<SharedResources.SharedResources> _stringLocalizer;
 		#endregion
 
 		#region Constructor
-		public StudentQueryHandler(IStudentService studentService, IMapper mapper)
+		public StudentQueryHandler(IStudentService studentService, IMapper mapper, IStringLocalizer<SharedResources.SharedResources> stringLocalizer) : base(stringLocalizer)
 		{
 			_studentService = studentService;
 			_mapper = mapper;
+			_stringLocalizer = stringLocalizer;
+
 		}
 		#endregion
 
@@ -40,7 +45,7 @@ namespace SchoolSystem_Core.Features.Students.Queries.Handlers
 		public async Task<Response<GetStudentResponse>> Handle(GetStudentByIdQuery request, CancellationToken cancellationToken)
 		{
 			var student = await _studentService.GetByIdAsync(request.Id);
-			if (student == null) { return NotFound<GetStudentResponse>("Student Not Found"); }
+			if (student == null) { return NotFound<GetStudentResponse>(_stringLocalizer[SharedResourcesKeys.NotFound]); }
 			else
 			{
 				var res = _mapper.Map<GetStudentResponse>(student);
@@ -52,7 +57,7 @@ namespace SchoolSystem_Core.Features.Students.Queries.Handlers
 		{
 			//replace Mapping => Expression fast access to DB , Func (linq) => Delegate need to translate to make DB understand it so use Expression
 			Expression<Func<Student, GetStudentPagintedListResponse>> expression =
-				e => new GetStudentPagintedListResponse(e.Id, e.Name, e.Address, e.Departments.DName);
+				e => new GetStudentPagintedListResponse(e.Id, e.NameAr, e.Address, e.Departments.DNameAr);
 
 			//var querable = _studentService.GetStudentsQuerable();
 			var FilterQuery = _studentService.FilterStudentPagination(request.OrderBy, request.Search);

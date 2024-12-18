@@ -43,7 +43,7 @@ namespace SchoolSystem_Service.Implementations
 
 		public async Task<bool> IsNameExist(string name)
 		{
-			var studentResult = _studentRepository.GetTableNoTracking().Where(x => x.Name.Equals(name)).FirstOrDefault();
+			var studentResult = _studentRepository.GetTableNoTracking().Where(x => x.NameAr.Equals(name)).FirstOrDefault();
 
 			if (studentResult == null)
 			{
@@ -55,7 +55,7 @@ namespace SchoolSystem_Service.Implementations
 
 		public async Task<bool> IsNameExistExcludeSelf(string name, int id)
 		{
-			var studentResult = _studentRepository.GetTableNoTracking().Where(x => x.Name.Equals(name) & !x.Id.Equals(id)).FirstOrDefault();
+			var studentResult = _studentRepository.GetTableNoTracking().Where(x => x.NameAr.Equals(name) & !x.Id.Equals(id)).FirstOrDefault();
 
 			if (studentResult == null)
 			{
@@ -107,7 +107,7 @@ namespace SchoolSystem_Service.Implementations
 			var querable = _studentRepository.GetTableNoTracking().Include(x => x.Departments).AsQueryable();
 			if (search != null)
 			{
-				querable = querable.Where(x => x.Name.Contains(search) || x.Address.Contains(search));
+				querable = querable.Where(x => x.NameAr.Contains(search) || x.Address.Contains(search));
 			}
 
 			switch (order)
@@ -116,13 +116,13 @@ namespace SchoolSystem_Service.Implementations
 					querable = querable.OrderBy(x => x.Id);
 					break;
 				case StudentOrderingEnum.Name:
-					querable = querable.OrderBy(x => x.Name);
+					querable = querable.OrderBy(x => x.NameAr);
 					break;
 				case StudentOrderingEnum.Address:
 					querable = querable = querable.OrderBy(x => x.Address);
 					break;
 				case StudentOrderingEnum.DepartmentName:
-					querable = querable.OrderBy(x => x.Departments.DName);
+					querable = querable.OrderBy(x => x.Departments.DNameAr);
 					break;
 				default:
 					querable = querable.OrderBy(x => x.Id);

@@ -9,7 +9,9 @@ namespace SchoolSystem_Core.Features.Students.Commands.Handlers
 {
 	public class StudentCommandHandler : ResponseHandler,
 		IRequestHandler<AddStudentCommand, Response<string>>,
-		IRequestHandler<EditStudentCommand, Response<string>>
+		IRequestHandler<EditStudentCommand, Response<string>>,
+		IRequestHandler<DeleteStudentCommand, Response<string>>
+
 
 	{
 		#region Fields
@@ -44,7 +46,7 @@ namespace SchoolSystem_Core.Features.Students.Commands.Handlers
 		public async Task<Response<string>> Handle(EditStudentCommand request, CancellationToken cancellationToken)
 		{
 			//check if id is exist
-			var std = await _studentService.GetStudentByIdAsync(request.Id);
+			var std = await _studentService.GetByIdAsync(request.Id);
 			if (std == null) return NotFound<string>("Student is not found");
 			var studentmapper = _mapper.Map<Student>(request);
 
@@ -55,6 +57,17 @@ namespace SchoolSystem_Core.Features.Students.Commands.Handlers
 
 			else return BadRequest<string>();
 
+		}
+
+		public async Task<Response<string>> Handle(DeleteStudentCommand request, CancellationToken cancellationToken)
+		{
+			var std = await _studentService.GetByIdAsync(request.Id);
+			if (std == null) return NotFound<string>("Student is not found");
+			var res = await _studentService.DeleteAsync(std);
+
+			if (res == "Success") return Deleted<string>($"Student deleted successfully {request.Id}");
+
+			else return BadRequest<string>();
 		}
 		#endregion
 	}

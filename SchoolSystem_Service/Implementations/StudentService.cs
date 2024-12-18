@@ -51,6 +51,24 @@ namespace SchoolSystem_Service.Implementations
 
 			return true;
 		}
+
+		public async Task<bool> IsNameExistExcludeSelf(string name, int id)
+		{
+			var studentResult = _studentRepository.GetTableNoTracking().Where(x => x.Name.Equals(name) & !x.Id.Equals(id)).FirstOrDefault();
+
+			if (studentResult == null)
+			{
+				return false;
+			}
+
+			return true;
+		}
+
+		public async Task<string> EditAsync(Student student)
+		{
+			await _studentRepository.UpdateAsync(student);
+			return "Success";
+		}
 		#endregion
 	}
 }

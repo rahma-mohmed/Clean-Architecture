@@ -4,15 +4,13 @@ using SchoolSystem_Core.Basis;
 using SchoolSystem_Core.Features.Students.Commands.Models;
 using SchoolSystem_Data.Entities;
 using SchoolSystem_Service.Implementations;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SchoolSystem_Core.Features.Students.Commands.Handlers
 {
-	public class StudentCommandHandler : ResponseHandler, IRequestHandler<AddStudentCommand, Response<string>>
+	public class StudentCommandHandler : ResponseHandler,
+		IRequestHandler<AddStudentCommand, Response<string>>,
+		IRequestHandler<EditStudentCommand, Response<string>>
+
 	{
 		#region Fields
 		private readonly IStudentService _studentService;
@@ -20,7 +18,7 @@ namespace SchoolSystem_Core.Features.Students.Commands.Handlers
 		#endregion
 
 		#region Constructor
-		public StudentCommandHandler(IStudentService studentService , IMapper mapper)
+		public StudentCommandHandler(IStudentService studentService, IMapper mapper)
 		{
 			_studentService = studentService;
 			_mapper = mapper;
@@ -36,11 +34,27 @@ namespace SchoolSystem_Core.Features.Students.Commands.Handlers
 			var res = await _studentService.AddAsync(studentmapper);
 			//check errors
 
-			if (res == "Exist") return UnProcessableEntity<string>("User Name Is Exist");
+			//if (res == "Exist") return UnProcessableEntity<string>("User Name Is Exist");
 
-			else if (res == "Success") return Created("Added Successfully");
+			if (res == "Success") return Created("Added Successfully");
 
 			else return BadRequest<string>();
+		}
+
+		public async Task<Response<string>> Handle(EditStudentCommand request, CancellationToken cancellationToken)
+		{
+			//check if id is exist
+			var std = await _studentService.GetStudentByIdAsync(request.Id);
+			if (std == null) return NotFound<string>("Student is not found");
+			var studentmapper = _mapper.Map<Student>(request);
+
+			//call service
+			var res = await _studentService.EditAsync(studentmapper);
+
+			if (res == "Success") return Success($"Student updated successfully {studentmapper.Id}");
+
+			else return BadRequest<string>();
+
 		}
 		#endregion
 	}

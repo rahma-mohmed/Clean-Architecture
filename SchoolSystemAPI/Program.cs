@@ -1,56 +1,59 @@
 
 using Microsoft.EntityFrameworkCore;
-using SchoolSystem_Infrastructure.Context;
-using SchoolSystem_Infrastructure.Repositories;
-using SchoolSystem_Infrastructure;
-using SchoolSystem_Service;
 using SchoolSystem_Core;
+using SchoolSystem_Core.Middleware;
+using SchoolSystem_Infrastructure;
+using SchoolSystem_Infrastructure.Context;
+using SchoolSystem_Service;
 
 namespace SchoolSystemAPI
 {
-    public class Program
-    {
-        public static void Main(string[] args)
-        {
-            var builder = WebApplication.CreateBuilder(args);
+	public class Program
+	{
+		public static void Main(string[] args)
+		{
+			var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
+			// Add services to the container.
 
-            builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-           
-            builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
+			builder.Services.AddControllers();
+			// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
-            builder.Services.AddDbContext<ApplicationDBContext>(options => {
-                options.UseSqlServer(builder.Configuration.GetConnectionString("dbcontext"));
-            });
+			builder.Services.AddEndpointsApiExplorer();
+			builder.Services.AddSwaggerGen();
 
-            builder.Services.AddTransient<ApplicationDBContext>();
+			builder.Services.AddDbContext<ApplicationDBContext>(options =>
+			{
+				options.UseSqlServer(builder.Configuration.GetConnectionString("dbcontext"));
+			});
 
-            #region Dependency Injection
-            builder.Services.AddInfrastructureDependencies()
-                            .AddServiceDependencies()
-                            .AddCoreDependencies();
-            #endregion
+			builder.Services.AddTransient<ApplicationDBContext>();
 
-            var app = builder.Build();
+			#region Dependency Injection
+			builder.Services.AddInfrastructureDependencies()
+							.AddServiceDependencies()
+							.AddCoreDependencies();
+			#endregion
 
-            // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
-            {
-                app.UseSwagger();
-                app.UseSwaggerUI();
-            }
+			var app = builder.Build();
 
-            app.UseHttpsRedirection();
+			// Configure the HTTP request pipeline.
+			if (app.Environment.IsDevelopment())
+			{
+				app.UseSwagger();
+				app.UseSwaggerUI();
+			}
 
-            app.UseAuthorization();
+			app.UseMiddleware<ErrorHandlerMiddleware>();
+
+			app.UseHttpsRedirection();
+
+			app.UseAuthorization();
 
 
-            app.MapControllers();
+			app.MapControllers();
 
-            app.Run();
-        }
-    }
+			app.Run();
+		}
+	}
 }

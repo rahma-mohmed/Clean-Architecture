@@ -15,3 +15,21 @@ C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Service\obj\Debug\ne
 C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Service\obj\Debug\net8.0\ref\SchoolSystem_Service.dll
 C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Service\bin\Debug\net8.0\SchoolSystem_Data.dll
 C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Service\bin\Debug\net8.0\SchoolSystem_Data.pdb
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Service\bin\Debug\net8.0\SchoolSystem_Service.deps.json
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Service\bin\Debug\net8.0\SchoolSystem_Service.dll
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Service\bin\Debug\net8.0\SchoolSystem_Service.pdb
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Service\bin\Debug\net8.0\SchoolSystem_Data.dll
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Service\bin\Debug\net8.0\SchoolSystem_Infrastructure.dll
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Service\bin\Debug\net8.0\SchoolSystem_Data.pdb
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Service\bin\Debug\net8.0\SchoolSystem_Infrastructure.pdb
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Service\obj\Debug\net8.0\SchoolSystem_Service.csproj.AssemblyReference.cache
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Service\obj\Debug\net8.0\SchoolSystem_Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Service\obj\Debug\net8.0\SchoolSystem_Service.AssemblyInfoInputs.cache
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Service\obj\Debug\net8.0\SchoolSystem_Service.AssemblyInfo.cs
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Service\obj\Debug\net8.0\SchoolSystem_Service.csproj.CoreCompileInputs.cache
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Service\obj\Debug\net8.0\SchoolSystem_Service.sourcelink.json
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Service\obj\Debug\net8.0\SchoolSy.C1467948.Up2Date
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Service\obj\Debug\net8.0\SchoolSystem_Service.dll
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Service\obj\Debug\net8.0\refint\SchoolSystem_Service.dll
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Service\obj\Debug\net8.0\SchoolSystem_Service.pdb
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Service\obj\Debug\net8.0\ref\SchoolSystem_Service.dll

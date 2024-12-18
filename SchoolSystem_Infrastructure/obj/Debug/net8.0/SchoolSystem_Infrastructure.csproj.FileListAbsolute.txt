@@ -15,3 +15,21 @@ C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Infrastructure\obj\D
 C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Infrastructure\obj\Debug\net8.0\ref\SchoolSystem_Infrastructure.dll
 C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Infrastructure\bin\Debug\net8.0\SchoolSystem_Data.dll
 C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Infrastructure\bin\Debug\net8.0\SchoolSystem_Data.pdb
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Infrastructure\bin\Debug\net8.0\SchoolSystem_Infrastructure.deps.json
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Infrastructure\bin\Debug\net8.0\SchoolSystem_Infrastructure.runtimeconfig.json
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Infrastructure\bin\Debug\net8.0\SchoolSystem_Infrastructure.dll
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Infrastructure\bin\Debug\net8.0\SchoolSystem_Infrastructure.pdb
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Infrastructure\bin\Debug\net8.0\SchoolSystem_Data.dll
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Infrastructure\bin\Debug\net8.0\SchoolSystem_Data.pdb
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Infrastructure\obj\Debug\net8.0\SchoolSystem_Infrastructure.csproj.AssemblyReference.cache
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Infrastructure\obj\Debug\net8.0\SchoolSystem_Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Infrastructure\obj\Debug\net8.0\SchoolSystem_Infrastructure.AssemblyInfoInputs.cache
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Infrastructure\obj\Debug\net8.0\SchoolSystem_Infrastructure.AssemblyInfo.cs
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Infrastructure\obj\Debug\net8.0\SchoolSystem_Infrastructure.csproj.CoreCompileInputs.cache
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Infrastructure\obj\Debug\net8.0\SchoolSystem_Infrastructure.sourcelink.json
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Infrastructure\obj\Debug\net8.0\SchoolSy.538490E9.Up2Date
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Infrastructure\obj\Debug\net8.0\SchoolSystem_Infrastructure.dll
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Infrastructure\obj\Debug\net8.0\refint\SchoolSystem_Infrastructure.dll
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Infrastructure\obj\Debug\net8.0\SchoolSystem_Infrastructure.pdb
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Infrastructure\obj\Debug\net8.0\SchoolSystem_Infrastructure.genruntimeconfig.cache
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Infrastructure\obj\Debug\net8.0\ref\SchoolSystem_Infrastructure.dll

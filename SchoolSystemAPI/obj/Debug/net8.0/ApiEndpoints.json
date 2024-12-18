@@ -17,6 +17,22 @@
   },
   {
     "ContainingType": "SchoolSystemAPI.Controllers.StudentController",
+    "Method": "Create",
+    "RelativePath": "api/Student/Api/V1/Student/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "SchoolSystem_Core.Features.Students.Commands.Models.AddStudentCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolSystemAPI.Controllers.StudentController",
     "Method": "GetStudentTask",
     "RelativePath": "api/Student/Api/V1/Student/List",
     "HttpMethod": "GET",

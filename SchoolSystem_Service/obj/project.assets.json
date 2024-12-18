@@ -2783,38 +2783,41 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\3ML4Ever\\.nuget\\packages\\": {}
+    "C:\\Users\\3ML4Ever\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\3ML4Ever\\source\\repos\\SchoolSystemAPI\\SchoolSystem_Service\\SchoolSystem_Service.csproj",
+      "projectUniqueName": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Service\\SchoolSystem_Service.csproj",
       "projectName": "SchoolSystem_Service",
-      "projectPath": "C:\\Users\\3ML4Ever\\source\\repos\\SchoolSystemAPI\\SchoolSystem_Service\\SchoolSystem_Service.csproj",
+      "projectPath": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Service\\SchoolSystem_Service.csproj",
       "packagesPath": "C:\\Users\\3ML4Ever\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\3ML4Ever\\source\\repos\\SchoolSystemAPI\\SchoolSystem_Service\\obj\\",
+      "outputPath": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Service\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\3ML4Ever\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\3ML4Ever\\source\\repos\\SchoolSystemAPI\\SchoolSyayem_Data\\SchoolSystem_Data.csproj": {
-              "projectPath": "C:\\Users\\3ML4Ever\\source\\repos\\SchoolSystemAPI\\SchoolSyayem_Data\\SchoolSystem_Data.csproj"
+            "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSyayem_Data\\SchoolSystem_Data.csproj": {
+              "projectPath": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSyayem_Data\\SchoolSystem_Data.csproj"
             },
-            "C:\\Users\\3ML4Ever\\source\\repos\\SchoolSystemAPI\\SchoolSystem_Infrastructure\\SchoolSystem_Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\3ML4Ever\\source\\repos\\SchoolSystemAPI\\SchoolSystem_Infrastructure\\SchoolSystem_Infrastructure.csproj"
+            "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Infrastructure\\SchoolSystem_Infrastructure.csproj": {
+              "projectPath": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Infrastructure\\SchoolSystem_Infrastructure.csproj"
             }
           }
         }
@@ -2828,7 +2831,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -2849,7 +2853,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

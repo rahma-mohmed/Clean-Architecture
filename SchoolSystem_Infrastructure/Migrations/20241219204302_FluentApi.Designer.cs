@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SchoolSystem_Infrastructure.Context;
 
@@ -11,9 +12,11 @@ using SchoolSystem_Infrastructure.Context;
 namespace SchoolSystem_Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    partial class ApplictionDBContextModelSnapshot : ModelSnapshot
+    [Migration("20241219204302_FluentApi")]
+    partial class FluentApi
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -47,7 +50,7 @@ namespace SchoolSystem_Infrastructure.Migrations
                         .IsUnique()
                         .HasFilter("[InsManager] IS NOT NULL");
 
-                    b.ToTable("Departments", (string)null);
+                    b.ToTable("Departments");
                 });
 
             modelBuilder.Entity("SchoolSystem_Data.Entities.DepartmentSubject", b =>
@@ -62,7 +65,7 @@ namespace SchoolSystem_Infrastructure.Migrations
 
                     b.HasIndex("DID");
 
-                    b.ToTable("DepartmentSubjects", (string)null);
+                    b.ToTable("DepartmentSubjects");
                 });
 
             modelBuilder.Entity("SchoolSystem_Data.Entities.Ins_Subject", b =>
@@ -77,7 +80,7 @@ namespace SchoolSystem_Infrastructure.Migrations
 
                     b.HasIndex("InsId");
 
-                    b.ToTable("Ins_Subject", (string)null);
+                    b.ToTable("Ins_Subject");
                 });
 
             modelBuilder.Entity("SchoolSystem_Data.Entities.Instructor", b =>
@@ -115,7 +118,7 @@ namespace SchoolSystem_Infrastructure.Migrations
 
                     b.HasIndex("SupervisorId");
 
-                    b.ToTable("Instructor", (string)null);
+                    b.ToTable("Instructor");
                 });
 
             modelBuilder.Entity("SchoolSystem_Data.Entities.Student", b =>
@@ -152,7 +155,7 @@ namespace SchoolSystem_Infrastructure.Migrations
 
                     b.HasIndex("DID");
 
-                    b.ToTable("Students", (string)null);
+                    b.ToTable("Students");
                 });
 
             modelBuilder.Entity("SchoolSystem_Data.Entities.StudentSubject", b =>
@@ -170,7 +173,7 @@ namespace SchoolSystem_Infrastructure.Migrations
 
                     b.HasIndex("StudID");
 
-                    b.ToTable("StudentSubjects", (string)null);
+                    b.ToTable("StudentSubjects");
                 });
 
             modelBuilder.Entity("SchoolSystem_Data.Entities.Subject", b =>
@@ -194,7 +197,7 @@ namespace SchoolSystem_Infrastructure.Migrations
 
                     b.HasKey("SubID");
 
-                    b.ToTable("Subjects", (string)null);
+                    b.ToTable("Subjects");
                 });
 
             modelBuilder.Entity("SchoolSystem_Data.Entities.Department", b =>

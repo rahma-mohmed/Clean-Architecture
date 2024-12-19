@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SchoolSystem_Data.Entities;
+using System.Reflection;
 
 namespace SchoolSystem_Infrastructure.Context
 {
@@ -28,23 +29,9 @@ namespace SchoolSystem_Infrastructure.Context
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
-			modelBuilder.Entity<DepartmentSubject>().HasKey(x => new { x.SubID, x.DID });
-
-			modelBuilder.Entity<Ins_Subject>().HasKey(x => new { x.SubID, x.InsId });
-
-			modelBuilder.Entity<StudentSubject>().HasKey(x => new { x.SubID, x.StudID });
-
-			modelBuilder.Entity<Instructor>()
-			.HasOne(x => x.Supervisor).WithMany(x => x.Instructors)
-			.HasForeignKey(x => x.SupervisorId).OnDelete(DeleteBehavior.Restrict);
-
-			modelBuilder.Entity<Department>()
-				.HasOne(x => x.Instructor)
-				.WithOne(x => x.DepartmentManager)
-				.HasForeignKey<Department>(x => x.InsManager)
-				.OnDelete(DeleteBehavior.Restrict); ;
-
 			base.OnModelCreating(modelBuilder);
+			//لتطبيق الكونفيجرشن المتنفذه في اي مكان
+			modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 		}
 	}
 }

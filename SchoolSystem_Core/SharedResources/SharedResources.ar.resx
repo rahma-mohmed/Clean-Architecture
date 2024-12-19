@@ -151,7 +151,7 @@
     <value>هذا الحقل مطلوب</value>
   </data>
   <data name="Success" xml:space="preserve">
-    <value>تم بنجاح</value>
+    <value>تمت العمليه بنجاح</value>
   </data>
   <data name="Unauthorized" xml:space="preserve">
     <value>غير مصرح</value>

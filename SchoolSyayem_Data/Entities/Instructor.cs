@@ -1,9 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using SchoolSystem_Data.Commons;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SchoolSystem_Data.Entities
 {
-	public class Instructor
+	public class Instructor : GeneralLocalizableEntity
 	{
 		public Instructor()
 		{

@@ -10,15 +10,30 @@ namespace SchoolSystem_Data.Entities
 		{
 			Students = new HashSet<Student>();
 			Departmentsubjects = new HashSet<DepartmentSubject>();
+			Instructors = new HashSet<Instructor>();
 		}
 
 		public int Id { get; set; }
+
 		[StringLength(100)]
-		public string DNameAr { get; set; }
+		public string? DNameAr { get; set; }
+
 		[StringLength(100)]
-		public string DNameEn { get; set; }
-		[InverseProperty("Departments")]
+		public string? DNameEn { get; set; }
+
+		public int? InsManager { get; set; }
+
+		[InverseProperty(nameof(Student.Departments))]
 		public virtual ICollection<Student> Students { get; set; }
+
+		[InverseProperty(nameof(DepartmentSubject.Department))]
 		public virtual ICollection<DepartmentSubject> Departmentsubjects { get; set; }
+
+		[InverseProperty(nameof(Instructor.Department))]
+		public virtual ICollection<Instructor> Instructors { get; set; }
+
+		[ForeignKey(nameof(InsManager))]
+		[InverseProperty(nameof(Instructor.DepartmentManager))]
+		public virtual Instructor? Instructor { get; set; }
 	}
 }

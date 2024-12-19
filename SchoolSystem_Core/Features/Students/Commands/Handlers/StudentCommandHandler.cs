@@ -52,6 +52,7 @@ namespace SchoolSystem_Core.Features.Students.Commands.Handlers
 			//check if id is exist
 			var std = await _studentService.GetByIdAsync(request.Id);
 			if (std == null) return NotFound<string>(_stringLocalizer[SharedResourcesKeys.NotFound]);
+
 			var studentmapper = _mapper.Map<Student>(request);
 
 			//call service

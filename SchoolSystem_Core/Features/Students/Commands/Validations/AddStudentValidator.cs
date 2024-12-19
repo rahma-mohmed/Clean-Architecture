@@ -27,18 +27,29 @@ namespace SchoolSystem_Core.Features.Students.Commands.Validations
 		#region Handle Function
 		public void ApplyValidateRules()
 		{
-			RuleFor(x => x.Name).NotEmpty().WithMessage(_stringLocalizer[SharedResourcesKeys.NotEmpty])
+			RuleFor(x => x.NameAr).NotEmpty().WithMessage(_stringLocalizer[SharedResourcesKeys.NotEmpty])
 				.NotNull().WithMessage(_stringLocalizer[SharedResourcesKeys.Required])
 				.MaximumLength(100).WithMessage(_stringLocalizer[SharedResourcesKeys.MaxLengthIs100]);
 
-			RuleFor(x => x.Address).NotEmpty().WithMessage(_stringLocalizer[SharedResourcesKeys.NotEmpty])
+			RuleFor(x => x.NameEn).NotEmpty().WithMessage(_stringLocalizer[SharedResourcesKeys.NotEmpty])
+				.NotNull().WithMessage(_stringLocalizer[SharedResourcesKeys.Required])
+				.MaximumLength(100).WithMessage(_stringLocalizer[SharedResourcesKeys.MaxLengthIs100]);
+
+			RuleFor(x => x.AddressAr).NotEmpty().WithMessage(_stringLocalizer[SharedResourcesKeys.NotEmpty])
+				.NotNull().WithMessage(_stringLocalizer[SharedResourcesKeys.Required])
+				.MaximumLength(100).WithMessage(_stringLocalizer[SharedResourcesKeys.Required]);
+
+			RuleFor(x => x.AddressEn).NotEmpty().WithMessage(_stringLocalizer[SharedResourcesKeys.NotEmpty])
 				.NotNull().WithMessage(_stringLocalizer[SharedResourcesKeys.Required])
 				.MaximumLength(100).WithMessage(_stringLocalizer[SharedResourcesKeys.Required]);
 		}
 
 		public void ApplyCustomValidateRules()
 		{
-			RuleFor(x => x.Name).MustAsync(async (Key, CancellationToken) => !await _studentService.IsNameExist(Key))
+			RuleFor(x => x.NameAr).MustAsync(async (Key, CancellationToken) => !await _studentService.IsNameExist(Key))
+				.WithMessage(_stringLocalizer[SharedResourcesKeys.Exist]);
+
+			RuleFor(x => x.NameEn).MustAsync(async (Key, CancellationToken) => !await _studentService.IsNameExist(Key))
 				.WithMessage(_stringLocalizer[SharedResourcesKeys.Exist]);
 		}
 		#endregion

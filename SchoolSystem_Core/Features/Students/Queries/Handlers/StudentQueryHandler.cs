@@ -59,7 +59,7 @@ namespace SchoolSystem_Core.Features.Students.Queries.Handlers
 		{
 			//replace Mapping => Expression fast access to DB , Func (linq) => Delegate need to translate to make DB understand it so use Expression
 			Expression<Func<Student, GetStudentPagintedListResponse>> expression =
-				e => new GetStudentPagintedListResponse(e.Id, e.GetLocalized(e.NameAr, e.NameEn), e.Address, e.GetLocalized(e.Departments.DNameAr, e.Departments.DNameEn));
+				e => new GetStudentPagintedListResponse(e.Id, e.GetLocalized(e.NameAr, e.NameEn), e.GetLocalized(e.NameAr, e.AddressEn), e.GetLocalized(e.Departments.DNameAr, e.Departments.DNameEn));
 
 			//var querable = _studentService.GetStudentsQuerable();
 			var FilterQuery = _studentService.FilterStudentPagination(request.OrderBy, request.Search);

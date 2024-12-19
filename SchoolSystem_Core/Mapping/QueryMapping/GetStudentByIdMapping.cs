@@ -9,7 +9,8 @@ namespace SchoolSystem_Core.Mapping.Students
 		{
 			CreateMap<Student, GetStudentResponse>()
 			.ForMember(std => std.DepartmentName, options => options.MapFrom(dst => dst.Departments.GetLocalized(dst.Departments.DNameAr, dst.Departments.DNameEn)))
-			.ForMember(std => std.Name, options => options.MapFrom(dst => dst.GetLocalized(dst.NameAr, dst.NameEn)));
+			.ForMember(std => std.Name, options => options.MapFrom(dst => dst.GetLocalized(dst.NameAr, dst.NameEn)))
+			.ForMember(std => std.Address, options => options.MapFrom(dst => dst.GetLocalized(dst.AddressAr, dst.AddressEn)));
 		}
 	}
 }

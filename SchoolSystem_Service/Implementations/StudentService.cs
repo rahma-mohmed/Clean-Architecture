@@ -43,7 +43,7 @@ namespace SchoolSystem_Service.Implementations
 
 		public async Task<bool> IsNameExist(string name)
 		{
-			var studentResult = _studentRepository.GetTableNoTracking().Where(x => x.NameAr.Equals(name)).FirstOrDefault();
+			var studentResult = _studentRepository.GetTableNoTracking().Where(x => x.NameAr.Equals(name) || x.NameEn.Equals(name)).FirstOrDefault();
 
 			if (studentResult == null)
 			{
@@ -55,7 +55,7 @@ namespace SchoolSystem_Service.Implementations
 
 		public async Task<bool> IsNameExistExcludeSelf(string name, int id)
 		{
-			var studentResult = _studentRepository.GetTableNoTracking().Where(x => x.NameAr.Equals(name) & !x.Id.Equals(id)).FirstOrDefault();
+			var studentResult = _studentRepository.GetTableNoTracking().AsEnumerable().Where(x => (x.NameAr.Equals(name) || x.NameEn.Equals(name)) & !x.Id.Equals(id)).FirstOrDefault();
 
 			if (studentResult == null)
 			{
@@ -91,7 +91,7 @@ namespace SchoolSystem_Service.Implementations
 
 		public async Task<Student> GetByIdAsync(int id)
 		{
-			var student = _studentRepository.GetTableAsTracking()
+			var student = _studentRepository.GetTableNoTracking()
 										   .Where(x => x.Id == id)
 										   .FirstOrDefault();
 			return student;
@@ -107,7 +107,7 @@ namespace SchoolSystem_Service.Implementations
 			var querable = _studentRepository.GetTableNoTracking().Include(x => x.Departments).AsQueryable();
 			if (search != null)
 			{
-				querable = querable.Where(x => x.NameAr.Contains(search) || x.Address.Contains(search));
+				querable = querable.Where(x => x.GetLocalized(x.NameAr, x.NameEn).Contains(search) || x.GetLocalized(x.AddressAr, x.AddressEn).Contains(search));
 			}
 
 			switch (order)
@@ -116,13 +116,13 @@ namespace SchoolSystem_Service.Implementations
 					querable = querable.OrderBy(x => x.Id);
 					break;
 				case StudentOrderingEnum.Name:
-					querable = querable.OrderBy(x => x.NameAr);
+					querable = querable.OrderBy(x => x.GetLocalized(x.NameAr, x.NameEn));
 					break;
 				case StudentOrderingEnum.Address:
-					querable = querable = querable.OrderBy(x => x.Address);
+					querable = querable = querable.OrderBy(x => x.GetLocalized(x.AddressAr, x.AddressEn));
 					break;
 				case StudentOrderingEnum.DepartmentName:
-					querable = querable.OrderBy(x => x.Departments.DNameAr);
+					querable = querable.OrderBy(x => x.Departments.GetLocalized(x.Departments.DNameAr, x.Departments.DNameEn));
 					break;
 				default:
 					querable = querable.OrderBy(x => x.Id);

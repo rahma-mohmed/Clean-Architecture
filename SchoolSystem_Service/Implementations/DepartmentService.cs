@@ -30,6 +30,11 @@ namespace SchoolSystem_Service.Implementations
 
 			return res;
 		}
+
+		public async Task<bool> IsDepartmentIdExist(int id)
+		{
+			return await _repository.GetTableNoTracking().AnyAsync(x => x.Id.Equals(id));
+		}
 		#endregion
 	}
 }

@@ -15,5 +15,7 @@
 		public const string UpdateSuccess = "UpdateSuccess";
 		public const string DeletedSuccess = "DeletedSuccess";
 		public const string MaxLengthIs100 = "MaxLengthIs100";
+		public const string DepartmentIdNotExist = "DepartmentIdNotExist";
+		public const string DepartmentId = "DepartmentId";
 	}
 }

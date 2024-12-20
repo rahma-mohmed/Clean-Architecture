@@ -132,6 +132,12 @@
   <data name="DeletedSuccess" xml:space="preserve">
     <value>تم الحذف بنجاح</value>
   </data>
+  <data name="DepartmentId" xml:space="preserve">
+    <value>رقم القسم</value>
+  </data>
+  <data name="DepartmentIdNotExist" xml:space="preserve">
+    <value>هذا القسم غير موجود</value>
+  </data>
   <data name="Exist" xml:space="preserve">
     <value>هذا الحقل موجود بالفعل</value>
   </data>

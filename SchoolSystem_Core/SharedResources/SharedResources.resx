@@ -132,6 +132,12 @@
   <data name="DeletedSuccess" xml:space="preserve">
     <value />
   </data>
+  <data name="DepartmentId" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DepartmentIdNotExist" xml:space="preserve">
+    <value />
+  </data>
   <data name="Exist" xml:space="preserve">
     <value />
   </data>

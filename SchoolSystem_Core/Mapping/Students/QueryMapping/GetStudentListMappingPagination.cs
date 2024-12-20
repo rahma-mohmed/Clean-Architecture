@@ -5,12 +5,11 @@ namespace SchoolSystem_Core.Mapping.Students
 {
 	public partial class StudentProfile
 	{
-		public void GetStudentListMapping()
+		public void GetStudentListMappingPagination()
 		{
-			CreateMap<Student, GetStudentListResponse>()
+			CreateMap<Student, GetStudentPagintedListResponse>()
 					.ForMember(dst => dst.DepartmentName, options => options.MapFrom(std => std.Departments.GetLocalized(std.Departments.DNameAr, std.Departments.DNameEn)))
 					.ForMember(dst => dst.Name, options => options.MapFrom(std => std.GetLocalized(std.NameAr, std.NameEn)))
-					.ForMember(dst => dst.Id, options => options.MapFrom(std => std.Id))
 					.ForMember(dst => dst.Address, options => options.MapFrom(std => std.GetLocalized(std.AddressAr, std.AddressEn)));
 		}
 	}

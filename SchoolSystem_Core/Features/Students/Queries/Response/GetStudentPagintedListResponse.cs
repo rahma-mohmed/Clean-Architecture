@@ -10,12 +10,12 @@
 
 		public string? DepartmentName { get; set; }
 
-		public GetStudentPagintedListResponse(int id, string name, string address, string deptName)
-		{
-			Id = id;
-			Name = name;
-			Address = address;
-			DepartmentName = deptName;
-		}
+		//public GetStudentPagintedListResponse(int id, string name, string address, string deptName)
+		//{
+		//	Id = id;
+		//	Name = name;
+		//	Address = address;
+		//	DepartmentName = deptName;
+		//}
 	}
 }

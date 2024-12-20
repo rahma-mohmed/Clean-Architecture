@@ -6,9 +6,7 @@ using SchoolSystem_Core.Features.Students.Queries.Models;
 using SchoolSystem_Core.Features.Students.Queries.Response;
 using SchoolSystem_Core.SharedResources;
 using SchoolSystem_Core.Wrapper;
-using SchoolSystem_Data.Entities;
 using SchoolSystem_Service.Implementations;
-using System.Linq.Expressions;
 
 namespace SchoolSystem_Core.Features.Students.Queries.Handlers
 {
@@ -58,12 +56,23 @@ namespace SchoolSystem_Core.Features.Students.Queries.Handlers
 		public async Task<PaginatedResult<GetStudentPagintedListResponse>> Handle(GetStudentPagintedListQuery request, CancellationToken cancellationToken)
 		{
 			//replace Mapping => Expression fast access to DB , Func (linq) => Delegate need to translate to make DB understand it so use Expression
-			Expression<Func<Student, GetStudentPagintedListResponse>> expression =
-				e => new GetStudentPagintedListResponse(e.Id, e.GetLocalized(e.NameAr, e.NameEn), e.GetLocalized(e.NameAr, e.AddressEn), e.GetLocalized(e.Departments.DNameAr, e.Departments.DNameEn));
+
+			//Expression<Func<Student, GetStudentPagintedListResponse>> expression =
+			//	e => new GetStudentPagintedListResponse(e.Id, e.GetLocalized(e.NameAr, e.NameEn), e.GetLocalized(e.NameAr, e.AddressEn), e.GetLocalized(e.Departments.DNameAr, e.Departments.DNameEn));
+			//------------------------------------------------------------------------------------------------------------------------------
 
 			//var querable = _studentService.GetStudentsQuerable();
 			var FilterQuery = _studentService.FilterStudentPagination(request.OrderBy, request.Search);
-			var pagintedList = await FilterQuery.Select(expression).ToPaginatedListAsync(request.PageNumber, request.PageSize);
+
+			//var pagintedList = await FilterQuery.Select(expression).ToPaginatedListAsync(request.PageNumber, request.PageSize);
+			//------------------------------------------------------------------------------------------------------------------------------
+			//var pagintedList = await FilterQuery.Select(e => new GetStudentPagintedListResponse(e.Id, e.GetLocalized(e.NameAr, e.NameEn), e.GetLocalized(e.NameAr, e.AddressEn), e.GetLocalized(e.Departments.DNameAr, e.Departments.DNameEn)))
+			//	.ToPaginatedListAsync(request.PageNumber, request.PageSize);
+			//------------------------------------------------------------------------------------------------------------------------------
+
+			var pagintedList = await _mapper.ProjectTo<GetStudentPagintedListResponse>(FilterQuery)
+				.ToPaginatedListAsync(request.PageNumber, request.PageSize);
+
 			pagintedList.Meta = new { Count = pagintedList.Data.Count };
 			return pagintedList;
 		}

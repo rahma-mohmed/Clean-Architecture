@@ -18,7 +18,7 @@ namespace SchoolSystem_Infrastructure
 				Option.Lockout.MaxFailedAccessAttempts = 5;
 				Option.Lockout.AllowedForNewUsers = true;
 
-				Option.User.RequireUniqueEmail = false;
+				Option.User.RequireUniqueEmail = true;
 
 			}).AddEntityFrameworkStores<ApplicationDBContext>().AddDefaultTokenProviders();
 

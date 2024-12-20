@@ -60,6 +60,9 @@
     <Folder Include="Features\Subjects\Queries\Handlers\" />
     <Folder Include="Features\Subjects\Queries\Models\" />
     <Folder Include="Features\Subjects\Queries\Response\" />
+    <Folder Include="Features\User\Queries\Handlers\" />
+    <Folder Include="Features\User\Queries\Models\" />
+    <Folder Include="Features\User\Queries\" />
     <Folder Include="Mapping\Departments\CommandMapping\" />
   </ItemGroup>
 

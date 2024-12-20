@@ -17,5 +17,9 @@
 		public const string MaxLengthIs100 = "MaxLengthIs100";
 		public const string DepartmentIdNotExist = "DepartmentIdNotExist";
 		public const string DepartmentId = "DepartmentId";
+		public const string PasswordMatch = "PasswordMatch";
+		public const string EmailExist = "EmailExist";
+		public const string UserNameExist = "UserNameExist";
+		public const string RegisterFaild = "RegisterFaild";
 	}
 }

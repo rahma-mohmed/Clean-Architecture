@@ -138,6 +138,9 @@
   <data name="DepartmentIdNotExist" xml:space="preserve">
     <value />
   </data>
+  <data name="EmailExist" xml:space="preserve">
+    <value />
+  </data>
   <data name="Exist" xml:space="preserve">
     <value />
   </data>
@@ -153,6 +156,12 @@
   <data name="NotFound" xml:space="preserve">
     <value>Not Found</value>
   </data>
+  <data name="PasswordMatch" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RegisterFaild" xml:space="preserve">
+    <value />
+  </data>
   <data name="Required" xml:space="preserve">
     <value>Required</value>
   </data>
@@ -166,6 +175,9 @@
     <value />
   </data>
   <data name="UpdateSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UserNameExist" xml:space="preserve">
     <value />
   </data>
 </root>

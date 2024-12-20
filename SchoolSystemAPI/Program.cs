@@ -1,4 +1,3 @@
-
 using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -34,6 +33,7 @@ namespace SchoolSystemAPI
 
 			#region Dependency Injection
 			builder.Services.AddInfrastructureDependencies()
+							.AddApplicationServiceseRegistration()
 							.AddServiceDependencies()
 							.AddCoreDependencies();
 			#endregion

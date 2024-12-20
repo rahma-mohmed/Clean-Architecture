@@ -17,6 +17,12 @@ C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Core\obj\Debug\net8.
 C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Core\obj\Debug\net8.0\ref\SchoolSystem_Core.dll
 C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Core\bin\Debug\net8.0\SchoolSystem_Data.dll
 C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystem_Core\bin\Debug\net8.0\SchoolSystem_Data.pdb
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Core\obj\Debug\net8.0\SchoolSystem_Core.csproj.AssemblyReference.cache
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Core\obj\Debug\net8.0\SchoolSystem_Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Core\obj\Debug\net8.0\SchoolSystem_Core.AssemblyInfoInputs.cache
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Core\obj\Debug\net8.0\SchoolSystem_Core.AssemblyInfo.cs
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Core\obj\Debug\net8.0\SchoolSystem_Core.csproj.CoreCompileInputs.cache
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Core\obj\Debug\net8.0\SchoolSystem_Core.sourcelink.json
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Core\bin\Debug\net8.0\SchoolSystem_Core.deps.json
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Core\bin\Debug\net8.0\SchoolSystem_Core.dll
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Core\bin\Debug\net8.0\SchoolSystem_Core.pdb
@@ -26,14 +32,16 @@ D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Core\bin\Debug\net8.0\
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Core\bin\Debug\net8.0\SchoolSystem_Data.pdb
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Core\bin\Debug\net8.0\SchoolSystem_Service.pdb
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Core\bin\Debug\net8.0\SchoolSystem_Infrastructure.pdb
-D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Core\obj\Debug\net8.0\SchoolSystem_Core.csproj.AssemblyReference.cache
-D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Core\obj\Debug\net8.0\SchoolSystem_Core.GeneratedMSBuildEditorConfig.editorconfig
-D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Core\obj\Debug\net8.0\SchoolSystem_Core.AssemblyInfoInputs.cache
-D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Core\obj\Debug\net8.0\SchoolSystem_Core.AssemblyInfo.cs
-D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Core\obj\Debug\net8.0\SchoolSystem_Core.csproj.CoreCompileInputs.cache
-D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Core\obj\Debug\net8.0\SchoolSystem_Core.sourcelink.json
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Core\obj\Debug\net8.0\SchoolSy.15AFAE3D.Up2Date
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Core\obj\Debug\net8.0\SchoolSystem_Core.dll
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Core\obj\Debug\net8.0\refint\SchoolSystem_Core.dll
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Core\obj\Debug\net8.0\SchoolSystem_Core.pdb
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Core\obj\Debug\net8.0\ref\SchoolSystem_Core.dll
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Core\obj\Debug\net8.0\SchoolSystem_Core.csproj.GenerateResource.cache
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Core\bin\Debug\net8.0\en\SchoolSystem_Core.resources.dll
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Core\obj\Debug\net8.0\SchoolSystem_Core.SharedResources.SharedResources.en.resources
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Core\obj\Debug\net8.0\en\SchoolSystem_Core.resources.dll
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Core\bin\Debug\net8.0\ar\SchoolSystem_Core.resources.dll
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Core\obj\Debug\net8.0\SchoolSystem_Core.SharedResources.SharedResources.ar.resources
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Core\obj\Debug\net8.0\ar\SchoolSystem_Core.resources.dll
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystem_Core\obj\Debug\net8.0\SchoolSystem_Core.SharedResources.SharedResources.resources

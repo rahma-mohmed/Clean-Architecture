@@ -12,11 +12,55 @@
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.11.0" />
     <PackageReference Include="MediatR" Version="12.4.1" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Localization.Abstractions" Version="9.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\SchoolSyayem_Data\SchoolSystem_Data.csproj" />
     <ProjectReference Include="..\SchoolSystem_Service\SchoolSystem_Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="SharedResources\SharedResources.ar.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SharedResources.ar.resx</DependentUpon>
+    </Compile>
+    <Compile Update="SharedResources\SharedResources.en.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SharedResources.en.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="SharedResources\SharedResources.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SharedResources.ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="SharedResources\SharedResources.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SharedResources.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Departments\Commands\Handlers\" />
+    <Folder Include="Features\Departments\Commands\Models\" />
+    <Folder Include="Features\Departments\Commands\Validators\" />
+    <Folder Include="Features\Instructors\Commands\Handlers\" />
+    <Folder Include="Features\Instructors\Commands\Models\" />
+    <Folder Include="Features\Instructors\Commands\Validators\" />
+    <Folder Include="Features\Instructors\Queries\Handlers\" />
+    <Folder Include="Features\Instructors\Queries\Models\" />
+    <Folder Include="Features\Instructors\Queries\Response\" />
+    <Folder Include="Features\Subjects\Commands\Handlers\" />
+    <Folder Include="Features\Subjects\Commands\Models\" />
+    <Folder Include="Features\Subjects\Commands\Validators\" />
+    <Folder Include="Features\Subjects\Queries\Handlers\" />
+    <Folder Include="Features\Subjects\Queries\Models\" />
+    <Folder Include="Features\Subjects\Queries\Response\" />
+    <Folder Include="Mapping\Departments\CommandMapping\" />
   </ItemGroup>
 
 </Project>

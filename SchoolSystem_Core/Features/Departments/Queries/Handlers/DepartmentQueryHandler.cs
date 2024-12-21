@@ -5,12 +5,14 @@ using SchoolSystem_Core.Basis;
 using SchoolSystem_Core.Features.Departments.Queries.Models;
 using SchoolSystem_Core.Features.Departments.Queries.Response;
 using SchoolSystem_Core.SharedResources;
-using SchoolSystem_Service.Implementations;
+using SchoolSystem_Core.Wrapper;
+using SchoolSystem_Service.IService;
 
 namespace SchoolSystem_Core.Features.Departments.Queries.Handlers
 {
 	public class DepartmentQueryHandler : ResponseHandler,
-		IRequestHandler<GetDepartmentByIdQuery, Response<GetDepartmentByIdResponse>>
+		IRequestHandler<GetDepartmentByIdQuery, Response<GetDepartmentByIdResponse>>,
+		IRequestHandler<GetDepartmentListQuery, PaginatedResult<GetDepartmentListResponse>>
 	{
 		#region Fields
 		private readonly IDepartmentService _departmentService;
@@ -40,6 +42,16 @@ namespace SchoolSystem_Core.Features.Departments.Queries.Handlers
 			var mapper = _mapper.Map<GetDepartmentByIdResponse>(response);
 
 			return Success(mapper);
+		}
+
+		public async Task<PaginatedResult<GetDepartmentListResponse>> Handle(GetDepartmentListQuery request, CancellationToken cancellationToken)
+		{
+			var response = _departmentService.FilterDepartmentPagination(request.OrderBy, request.Search);
+			var pagintedList = await _mapper.ProjectTo<GetDepartmentListResponse>(response)
+				.ToPaginatedListAsync(request.PageNumber, request.PageSize);
+
+			pagintedList.Meta = new { Count = pagintedList.Data.Count };
+			return pagintedList;
 		}
 		#endregion
 	}

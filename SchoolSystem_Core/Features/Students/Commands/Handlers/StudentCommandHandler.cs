@@ -5,7 +5,7 @@ using SchoolSystem_Core.Basis;
 using SchoolSystem_Core.Features.Students.Commands.Models;
 using SchoolSystem_Core.SharedResources;
 using SchoolSystem_Data.Entities;
-using SchoolSystem_Service.Implementations;
+using SchoolSystem_Service.IService;
 
 namespace SchoolSystem_Core.Features.Students.Commands.Handlers
 {
@@ -70,7 +70,7 @@ namespace SchoolSystem_Core.Features.Students.Commands.Handlers
 			if (std == null) return NotFound<string>(_stringLocalizer[SharedResourcesKeys.NotFound]);
 			var res = await _studentService.DeleteAsync(std);
 
-			if (res == "Success") return Deleted<string>($"{_stringLocalizer[SharedResourcesKeys.Deleted]} {request.Id}");
+			if (res == "Success") return Deleted<string>($"{_stringLocalizer[SharedResourcesKeys.DeletedSuccess]} {request.Id}");
 
 			else return BadRequest<string>();
 		}

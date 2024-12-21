@@ -1,4 +1,5 @@
 ﻿using SchoolSystem_Infrastructure.IRepositories;
+using SchoolSystem_Service.IService;
 
 namespace SchoolSystem_Service.Implementations
 {

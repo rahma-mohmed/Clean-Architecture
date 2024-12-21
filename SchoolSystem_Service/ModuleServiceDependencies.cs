@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using SchoolSystem_Service.Implementations;
+using SchoolSystem_Service.IService;
 
 namespace SchoolSystem_Service
 {

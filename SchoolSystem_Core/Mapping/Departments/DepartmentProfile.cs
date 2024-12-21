@@ -7,6 +7,9 @@ namespace SchoolSystem_Core.Mapping.Departments
 		public DepartmentProfile()
 		{
 			GetDepartmentByIdMapping();
+			GetDepartmentListMapping();
+			AddDepartmentCommandMapping();
+			EditDepartmentCommandMapper();
 		}
 	}
 }

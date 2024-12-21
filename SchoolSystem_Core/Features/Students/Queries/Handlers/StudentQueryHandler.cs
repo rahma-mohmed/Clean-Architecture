@@ -6,7 +6,7 @@ using SchoolSystem_Core.Features.Students.Queries.Models;
 using SchoolSystem_Core.Features.Students.Queries.Response;
 using SchoolSystem_Core.SharedResources;
 using SchoolSystem_Core.Wrapper;
-using SchoolSystem_Service.Implementations;
+using SchoolSystem_Service.IService;
 
 namespace SchoolSystem_Core.Features.Students.Queries.Handlers
 {

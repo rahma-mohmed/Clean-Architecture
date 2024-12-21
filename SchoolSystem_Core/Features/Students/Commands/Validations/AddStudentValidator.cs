@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Localization;
 using SchoolSystem_Core.Features.Students.Commands.Models;
 using SchoolSystem_Core.SharedResources;
-using SchoolSystem_Service.Implementations;
+using SchoolSystem_Service.IService;
 
 namespace SchoolSystem_Core.Features.Students.Commands.Validations
 {

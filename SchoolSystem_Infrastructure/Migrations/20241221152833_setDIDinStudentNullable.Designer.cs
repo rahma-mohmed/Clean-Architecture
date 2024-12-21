@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SchoolSystem_Infrastructure.Context;
 
@@ -11,9 +12,11 @@ using SchoolSystem_Infrastructure.Context;
 namespace SchoolSystem_Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    partial class ApplictionDBContextModelSnapshot : ModelSnapshot
+    [Migration("20241221152833_setDIDinStudentNullable")]
+    partial class setDIDinStudentNullable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -511,8 +514,7 @@ namespace SchoolSystem_Infrastructure.Migrations
                 {
                     b.HasOne("SchoolSystem_Data.Entities.Department", "Department")
                         .WithMany("Instructors")
-                        .HasForeignKey("DID")
-                        .OnDelete(DeleteBehavior.SetNull);
+                        .HasForeignKey("DID");
 
                     b.HasOne("SchoolSystem_Data.Entities.Instructor", "Supervisor")
                         .WithMany("Instructors")

@@ -1,7 +1,7 @@
 ﻿using SchoolSystem_Data.Entities;
 using SchoolSystem_Data.Helper;
 
-namespace SchoolSystem_Service.Implementations
+namespace SchoolSystem_Service.IService
 {
 	public interface IStudentService
 	{

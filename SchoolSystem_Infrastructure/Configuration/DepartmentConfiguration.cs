@@ -11,7 +11,17 @@ namespace SchoolSystem_Infrastructure.Configuration
 			builder.HasOne(x => x.Instructor)
 			.WithOne(x => x.DepartmentManager)
 			.HasForeignKey<Department>(x => x.InsManager)
-			.OnDelete(DeleteBehavior.Restrict); ;
+			.OnDelete(DeleteBehavior.Restrict);
+
+			builder.HasMany(d => d.Students)
+			.WithOne(d => d.Departments)
+			.HasForeignKey(s => s.DID)
+			.OnDelete(DeleteBehavior.SetNull);
+
+			builder.HasMany(d => d.Instructors)
+			.WithOne(d => d.Department)
+			.HasForeignKey(s => s.DID)
+			.OnDelete(DeleteBehavior.SetNull);
 		}
 	}
 }

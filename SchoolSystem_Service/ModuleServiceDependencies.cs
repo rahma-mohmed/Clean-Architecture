@@ -1,6 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using SchoolSystem_Data.Helper;
 using SchoolSystem_Service.Implementations;
 using SchoolSystem_Service.IService;
+using System.Collections.Concurrent;
 
 namespace SchoolSystem_Service
 {
@@ -13,6 +15,7 @@ namespace SchoolSystem_Service
 			services.AddTransient<IInstructorService, InstructorService>();
 			services.AddTransient<ISubjectService, SubjectService>();
 			services.AddTransient<IAuthenticationService, AuthenticationService>();
+			services.AddSingleton(new ConcurrentDictionary<string, RefreshToken>());
 			return services;
 		}
 	}

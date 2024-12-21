@@ -126,8 +126,8 @@
   <data name="Created" xml:space="preserve">
     <value>Created</value>
   </data>
-  <data name="Deleted" xml:space="preserve">
-    <value>Deleted</value>
+  <data name="DeletedFailed" xml:space="preserve">
+    <value>Deleted Failed</value>
   </data>
   <data name="DeletedSuccess" xml:space="preserve">
     <value />
@@ -138,10 +138,19 @@
   <data name="DepartmentIdNotExist" xml:space="preserve">
     <value />
   </data>
+  <data name="DNameAr" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DNameEn" xml:space="preserve">
+    <value />
+  </data>
   <data name="EmailExist" xml:space="preserve">
     <value />
   </data>
   <data name="Exist" xml:space="preserve">
+    <value />
+  </data>
+  <data name="InstructorIdNotExist" xml:space="preserve">
     <value />
   </data>
   <data name="MaxLengthIs100" xml:space="preserve">

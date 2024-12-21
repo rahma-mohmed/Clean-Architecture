@@ -126,8 +126,8 @@
   <data name="Created" xml:space="preserve">
     <value>Created Successfully</value>
   </data>
-  <data name="Deleted" xml:space="preserve">
-    <value>Deleted Successfully</value>
+  <data name="DeletedFailed" xml:space="preserve">
+    <value>Delete operation failed</value>
   </data>
   <data name="DeletedSuccess" xml:space="preserve">
     <value>Deleted Successfully</value>
@@ -138,11 +138,20 @@
   <data name="DepartmentIdNotExist" xml:space="preserve">
     <value>This department is not exist</value>
   </data>
+  <data name="DNameAr" xml:space="preserve">
+    <value>Department Name</value>
+  </data>
+  <data name="DNameEn" xml:space="preserve">
+    <value>Department Name</value>
+  </data>
   <data name="EmailExist" xml:space="preserve">
     <value>This email already exist</value>
   </data>
   <data name="Exist" xml:space="preserve">
     <value>Object is already exist</value>
+  </data>
+  <data name="InstructorIdNotExist" xml:space="preserve">
+    <value>Instructor Id does not exist</value>
   </data>
   <data name="MaxLengthIs100" xml:space="preserve">
     <value>Please ensure field does not exceed 100 characters</value>

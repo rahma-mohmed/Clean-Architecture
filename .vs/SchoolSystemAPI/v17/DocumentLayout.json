@@ -3,76 +3,32 @@
   "WorkspaceRootPath": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A3BCBFC2-B2A3-46EF-B3BD-2E87E925A04D}|SchoolSystem_Core\\SchoolSystem_Core.csproj|d:\\dotnet\\clean architecture\\schoolsystemapi\\schoolsystem_core\\features\\students\\queries\\handlers\\studentqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3BCBFC2-B2A3-46EF-B3BD-2E87E925A04D}|SchoolSystem_Core\\SchoolSystem_Core.csproj|solutionrelative:schoolsystem_core\\features\\students\\queries\\handlers\\studentqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C5AEFC1-870A-426E-A9FE-3D4EB2C7072B}|SchoolSystemAPI\\SchoolSystemAPI.csproj|d:\\dotnet\\clean architecture\\schoolsystemapi\\schoolsystemapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C5AEFC1-870A-426E-A9FE-3D4EB2C7072B}|SchoolSystemAPI\\SchoolSystemAPI.csproj|solutionrelative:schoolsystemapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3BCBFC2-B2A3-46EF-B3BD-2E87E925A04D}|SchoolSystem_Core\\SchoolSystem_Core.csproj|d:\\dotnet\\clean architecture\\schoolsystemapi\\schoolsystem_core\\features\\students\\queries\\response\\getstudentpagintedlistresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3BCBFC2-B2A3-46EF-B3BD-2E87E925A04D}|SchoolSystem_Core\\SchoolSystem_Core.csproj|solutionrelative:schoolsystem_core\\features\\students\\queries\\response\\getstudentpagintedlistresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C5AEFC1-870A-426E-A9FE-3D4EB2C7072B}|SchoolSystemAPI\\SchoolSystemAPI.csproj|d:\\dotnet\\clean architecture\\schoolsystemapi\\schoolsystemapi\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C5AEFC1-870A-426E-A9FE-3D4EB2C7072B}|SchoolSystemAPI\\SchoolSystemAPI.csproj|solutionrelative:schoolsystemapi\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3BCBFC2-B2A3-46EF-B3BD-2E87E925A04D}|SchoolSystem_Core\\SchoolSystem_Core.csproj|d:\\dotnet\\clean architecture\\schoolsystemapi\\schoolsystem_core\\mapping\\students\\querymapping\\getstudentlistmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3BCBFC2-B2A3-46EF-B3BD-2E87E925A04D}|SchoolSystem_Core\\SchoolSystem_Core.csproj|solutionrelative:schoolsystem_core\\mapping\\students\\querymapping\\getstudentlistmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A3BCBFC2-B2A3-46EF-B3BD-2E87E925A04D}|SchoolSystem_Core\\SchoolSystem_Core.csproj|d:\\dotnet\\clean architecture\\schoolsystemapi\\schoolsystem_core\\features\\user\\commands\\handlers\\usercommandhandlers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3BCBFC2-B2A3-46EF-B3BD-2E87E925A04D}|SchoolSystem_Core\\SchoolSystem_Core.csproj|solutionrelative:schoolsystem_core\\features\\user\\commands\\handlers\\usercommandhandlers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3BCBFC2-B2A3-46EF-B3BD-2E87E925A04D}|SchoolSystem_Core\\SchoolSystem_Core.csproj|d:\\dotnet\\clean architecture\\schoolsystemapi\\schoolsystem_core\\mapping\\students\\querymapping\\getstudentbyidmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3BCBFC2-B2A3-46EF-B3BD-2E87E925A04D}|SchoolSystem_Core\\SchoolSystem_Core.csproj|solutionrelative:schoolsystem_core\\mapping\\students\\querymapping\\getstudentbyidmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A3BCBFC2-B2A3-46EF-B3BD-2E87E925A04D}|SchoolSystem_Core\\SchoolSystem_Core.csproj|d:\\dotnet\\clean architecture\\schoolsystemapi\\schoolsystem_core\\mapping\\applicationuser\\commandmapping\\updateusercommandmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3BCBFC2-B2A3-46EF-B3BD-2E87E925A04D}|SchoolSystem_Core\\SchoolSystem_Core.csproj|solutionrelative:schoolsystem_core\\mapping\\applicationuser\\commandmapping\\updateusercommandmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A3BCBFC2-B2A3-46EF-B3BD-2E87E925A04D}|SchoolSystem_Core\\SchoolSystem_Core.csproj|d:\\dotnet\\clean architecture\\schoolsystemapi\\schoolsystem_core\\features\\students\\commands\\handlers\\studentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3BCBFC2-B2A3-46EF-B3BD-2E87E925A04D}|SchoolSystem_Core\\SchoolSystem_Core.csproj|solutionrelative:schoolsystem_core\\features\\students\\commands\\handlers\\studentcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A3BCBFC2-B2A3-46EF-B3BD-2E87E925A04D}|SchoolSystem_Core\\SchoolSystem_Core.csproj|d:\\dotnet\\clean architecture\\schoolsystemapi\\schoolsystem_core\\mapping\\applicationuser\\commandmapping\\addusercommandmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3BCBFC2-B2A3-46EF-B3BD-2E87E925A04D}|SchoolSystem_Core\\SchoolSystem_Core.csproj|solutionrelative:schoolsystem_core\\mapping\\applicationuser\\commandmapping\\addusercommandmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{184BD176-3375-4D15-A96A-30F9CE84DA8E}|SchoolSystem_Service\\SchoolSystem_Service.csproj|d:\\dotnet\\clean architecture\\schoolsystemapi\\schoolsystem_service\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{184BD176-3375-4D15-A96A-30F9CE84DA8E}|SchoolSystem_Service\\SchoolSystem_Service.csproj|solutionrelative:schoolsystem_service\\implementations\\studentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3BCBFC2-B2A3-46EF-B3BD-2E87E925A04D}|SchoolSystem_Core\\SchoolSystem_Core.csproj|d:\\dotnet\\clean architecture\\schoolsystemapi\\schoolsystem_core\\features\\students\\commands\\validations\\addstudentvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3BCBFC2-B2A3-46EF-B3BD-2E87E925A04D}|SchoolSystem_Core\\SchoolSystem_Core.csproj|solutionrelative:schoolsystem_core\\features\\students\\commands\\validations\\addstudentvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A3BCBFC2-B2A3-46EF-B3BD-2E87E925A04D}|SchoolSystem_Core\\SchoolSystem_Core.csproj|d:\\dotnet\\clean architecture\\schoolsystemapi\\schoolsystem_core\\mapping\\applicationuser\\applicationuserprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3BCBFC2-B2A3-46EF-B3BD-2E87E925A04D}|SchoolSystem_Core\\SchoolSystem_Core.csproj|solutionrelative:schoolsystem_core\\mapping\\applicationuser\\applicationuserprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A3BCBFC2-B2A3-46EF-B3BD-2E87E925A04D}|SchoolSystem_Core\\SchoolSystem_Core.csproj|d:\\dotnet\\clean architecture\\schoolsystemapi\\schoolsystem_core\\sharedresources\\sharedresourceskeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A3BCBFC2-B2A3-46EF-B3BD-2E87E925A04D}|SchoolSystem_Core\\SchoolSystem_Core.csproj|solutionrelative:schoolsystem_core\\sharedresources\\sharedresourceskeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{184BD176-3375-4D15-A96A-30F9CE84DA8E}|SchoolSystem_Service\\SchoolSystem_Service.csproj|d:\\dotnet\\clean architecture\\schoolsystemapi\\schoolsystem_service\\implementations\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{184BD176-3375-4D15-A96A-30F9CE84DA8E}|SchoolSystem_Service\\SchoolSystem_Service.csproj|solutionrelative:schoolsystem_service\\implementations\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{184BD176-3375-4D15-A96A-30F9CE84DA8E}|SchoolSystem_Service\\SchoolSystem_Service.csproj|d:\\dotnet\\clean architecture\\schoolsystemapi\\schoolsystem_service\\implementations\\idepartmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{184BD176-3375-4D15-A96A-30F9CE84DA8E}|SchoolSystem_Service\\SchoolSystem_Service.csproj|solutionrelative:schoolsystem_service\\implementations\\idepartmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3BCBFC2-B2A3-46EF-B3BD-2E87E925A04D}|SchoolSystem_Core\\SchoolSystem_Core.csproj|d:\\dotnet\\clean architecture\\schoolsystemapi\\schoolsystem_core\\mapping\\departments\\departmentprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3BCBFC2-B2A3-46EF-B3BD-2E87E925A04D}|SchoolSystem_Core\\SchoolSystem_Core.csproj|solutionrelative:schoolsystem_core\\mapping\\departments\\departmentprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A3BCBFC2-B2A3-46EF-B3BD-2E87E925A04D}|SchoolSystem_Core\\SchoolSystem_Core.csproj|d:\\dotnet\\clean architecture\\schoolsystemapi\\schoolsystem_core\\mapping\\departments\\querymapping\\getdepartmentbyidmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A3BCBFC2-B2A3-46EF-B3BD-2E87E925A04D}|SchoolSystem_Core\\SchoolSystem_Core.csproj|solutionrelative:schoolsystem_core\\mapping\\departments\\querymapping\\getdepartmentbyidmapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C48E7EEA-57EE-4A61-9FB0-BEBA979D6819}|SchoolSyayem_Data\\SchoolSystem_Data.csproj|d:\\dotnet\\clean architecture\\schoolsystemapi\\schoolsyayem_data\\appmetadata\\router.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C48E7EEA-57EE-4A61-9FB0-BEBA979D6819}|SchoolSyayem_Data\\SchoolSystem_Data.csproj|solutionrelative:schoolsyayem_data\\appmetadata\\router.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2C5AEFC1-870A-426E-A9FE-3D4EB2C7072B}|SchoolSystemAPI\\SchoolSystemAPI.csproj|d:\\dotnet\\clean architecture\\schoolsystemapi\\schoolsystemapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C5AEFC1-870A-426E-A9FE-3D4EB2C7072B}|SchoolSystemAPI\\SchoolSystemAPI.csproj|solutionrelative:schoolsystemapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A424EBAA-572C-4B30-B9C5-B0B6A5AFC79F}|SchoolSystem_Infrastructure\\SchoolSystem_Infrastructure.csproj|d:\\dotnet\\clean architecture\\schoolsystemapi\\schoolsystem_infrastructure\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A424EBAA-572C-4B30-B9C5-B0B6A5AFC79F}|SchoolSystem_Infrastructure\\SchoolSystem_Infrastructure.csproj|solutionrelative:schoolsystem_infrastructure\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A424EBAA-572C-4B30-B9C5-B0B6A5AFC79F}|SchoolSystem_Infrastructure\\SchoolSystem_Infrastructure.csproj|d:\\dotnet\\clean architecture\\schoolsystemapi\\schoolsystem_infrastructure\\repositories\\instructorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A424EBAA-572C-4B30-B9C5-B0B6A5AFC79F}|SchoolSystem_Infrastructure\\SchoolSystem_Infrastructure.csproj|solutionrelative:schoolsystem_infrastructure\\repositories\\instructorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A424EBAA-572C-4B30-B9C5-B0B6A5AFC79F}|SchoolSystem_Infrastructure\\SchoolSystem_Infrastructure.csproj|d:\\dotnet\\clean architecture\\schoolsystemapi\\schoolsystem_infrastructure\\repositories\\studentsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A424EBAA-572C-4B30-B9C5-B0B6A5AFC79F}|SchoolSystem_Infrastructure\\SchoolSystem_Infrastructure.csproj|solutionrelative:schoolsystem_infrastructure\\repositories\\studentsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A424EBAA-572C-4B30-B9C5-B0B6A5AFC79F}|SchoolSystem_Infrastructure\\SchoolSystem_Infrastructure.csproj|d:\\dotnet\\clean architecture\\schoolsystemapi\\schoolsystem_infrastructure\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A424EBAA-572C-4B30-B9C5-B0B6A5AFC79F}|SchoolSystem_Infrastructure\\SchoolSystem_Infrastructure.csproj|solutionrelative:schoolsystem_infrastructure\\context\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,123 +38,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GetStudentPagintedListResponse.cs",
-              "DocumentMoniker": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Core\\Features\\Students\\Queries\\Response\\GetStudentPagintedListResponse.cs",
-              "RelativeDocumentMoniker": "SchoolSystem_Core\\Features\\Students\\Queries\\Response\\GetStudentPagintedListResponse.cs",
-              "ToolTip": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Core\\Features\\Students\\Queries\\Response\\GetStudentPagintedListResponse.cs*",
-              "RelativeToolTip": "SchoolSystem_Core\\Features\\Students\\Queries\\Response\\GetStudentPagintedListResponse.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T14:01:49.716Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GetStudentListMapping.cs",
-              "DocumentMoniker": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Core\\Mapping\\Students\\QueryMapping\\GetStudentListMapping.cs",
-              "RelativeDocumentMoniker": "SchoolSystem_Core\\Mapping\\Students\\QueryMapping\\GetStudentListMapping.cs",
-              "ToolTip": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Core\\Mapping\\Students\\QueryMapping\\GetStudentListMapping.cs",
-              "RelativeToolTip": "SchoolSystem_Core\\Mapping\\Students\\QueryMapping\\GetStudentListMapping.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T13:59:10.245Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GetStudentByIdMapping.cs",
-              "DocumentMoniker": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Core\\Mapping\\Students\\QueryMapping\\GetStudentByIdMapping.cs",
-              "RelativeDocumentMoniker": "SchoolSystem_Core\\Mapping\\Students\\QueryMapping\\GetStudentByIdMapping.cs",
-              "ToolTip": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Core\\Mapping\\Students\\QueryMapping\\GetStudentByIdMapping.cs",
-              "RelativeToolTip": "SchoolSystem_Core\\Mapping\\Students\\QueryMapping\\GetStudentByIdMapping.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T13:58:31.308Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "StudentQueryHandler.cs",
-              "DocumentMoniker": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Core\\Features\\Students\\Queries\\Handlers\\StudentQueryHandler.cs",
-              "RelativeDocumentMoniker": "SchoolSystem_Core\\Features\\Students\\Queries\\Handlers\\StudentQueryHandler.cs",
-              "ToolTip": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Core\\Features\\Students\\Queries\\Handlers\\StudentQueryHandler.cs*",
-              "RelativeToolTip": "SchoolSystem_Core\\Features\\Students\\Queries\\Handlers\\StudentQueryHandler.cs*",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAAFMAAAAAAAAAAAAAAA==",
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystemAPI\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "SchoolSystemAPI\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystemAPI\\Controllers\\UserController.cs*",
+              "RelativeToolTip": "SchoolSystemAPI\\Controllers\\UserController.cs*",
+              "ViewState": "AgIAABMAAAAAAAAAAAAwwCYAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T13:50:03.071Z",
+              "WhenOpened": "2024-12-20T23:56:54.689Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StudentCommandHandler.cs",
-              "DocumentMoniker": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Core\\Features\\Students\\Commands\\Handlers\\StudentCommandHandler.cs",
-              "RelativeDocumentMoniker": "SchoolSystem_Core\\Features\\Students\\Commands\\Handlers\\StudentCommandHandler.cs",
-              "ToolTip": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Core\\Features\\Students\\Commands\\Handlers\\StudentCommandHandler.cs",
-              "RelativeToolTip": "SchoolSystem_Core\\Features\\Students\\Commands\\Handlers\\StudentCommandHandler.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystemAPI\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "SchoolSystemAPI\\Controllers\\StudentController.cs",
+              "ToolTip": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystemAPI\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "SchoolSystemAPI\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACcAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T13:49:40.163Z",
+              "WhenOpened": "2024-12-20T23:56:58.539Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "StudentService.cs",
-              "DocumentMoniker": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Service\\Implementations\\StudentService.cs",
-              "RelativeDocumentMoniker": "SchoolSystem_Service\\Implementations\\StudentService.cs",
-              "ToolTip": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Service\\Implementations\\StudentService.cs",
-              "RelativeToolTip": "SchoolSystem_Service\\Implementations\\StudentService.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "ApplicationUserProfile.cs",
+              "DocumentMoniker": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Core\\Mapping\\ApplicationUser\\ApplicationUserProfile.cs",
+              "RelativeDocumentMoniker": "SchoolSystem_Core\\Mapping\\ApplicationUser\\ApplicationUserProfile.cs",
+              "ToolTip": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Core\\Mapping\\ApplicationUser\\ApplicationUserProfile.cs",
+              "RelativeToolTip": "SchoolSystem_Core\\Mapping\\ApplicationUser\\ApplicationUserProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T13:39:21.052Z",
+              "WhenOpened": "2024-12-20T23:56:02.711Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SharedResourcesKeys.cs",
-              "DocumentMoniker": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Core\\SharedResources\\SharedResourcesKeys.cs",
-              "RelativeDocumentMoniker": "SchoolSystem_Core\\SharedResources\\SharedResourcesKeys.cs",
-              "ToolTip": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Core\\SharedResources\\SharedResourcesKeys.cs",
-              "RelativeToolTip": "SchoolSystem_Core\\SharedResources\\SharedResourcesKeys.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "AddUserCommandMapping.cs",
+              "DocumentMoniker": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Core\\Mapping\\ApplicationUser\\CommandMapping\\AddUserCommandMapping.cs",
+              "RelativeDocumentMoniker": "SchoolSystem_Core\\Mapping\\ApplicationUser\\CommandMapping\\AddUserCommandMapping.cs",
+              "ToolTip": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Core\\Mapping\\ApplicationUser\\CommandMapping\\AddUserCommandMapping.cs",
+              "RelativeToolTip": "SchoolSystem_Core\\Mapping\\ApplicationUser\\CommandMapping\\AddUserCommandMapping.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T13:27:45.272Z",
+              "WhenOpened": "2024-12-20T23:55:23.54Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DepartmentService.cs",
-              "DocumentMoniker": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Service\\Implementations\\DepartmentService.cs",
-              "RelativeDocumentMoniker": "SchoolSystem_Service\\Implementations\\DepartmentService.cs",
-              "ToolTip": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Service\\Implementations\\DepartmentService.cs",
-              "RelativeToolTip": "SchoolSystem_Service\\Implementations\\DepartmentService.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "UpdateUserCommandMapping.cs",
+              "DocumentMoniker": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Core\\Mapping\\ApplicationUser\\CommandMapping\\UpdateUserCommandMapping.cs",
+              "RelativeDocumentMoniker": "SchoolSystem_Core\\Mapping\\ApplicationUser\\CommandMapping\\UpdateUserCommandMapping.cs",
+              "ToolTip": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Core\\Mapping\\ApplicationUser\\CommandMapping\\UpdateUserCommandMapping.cs",
+              "RelativeToolTip": "SchoolSystem_Core\\Mapping\\ApplicationUser\\CommandMapping\\UpdateUserCommandMapping.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T13:25:37.27Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IDepartmentService.cs",
-              "DocumentMoniker": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Service\\Implementations\\IDepartmentService.cs",
-              "RelativeDocumentMoniker": "SchoolSystem_Service\\Implementations\\IDepartmentService.cs",
-              "ToolTip": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Service\\Implementations\\IDepartmentService.cs",
-              "RelativeToolTip": "SchoolSystem_Service\\Implementations\\IDepartmentService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T13:24:25.222Z",
+              "WhenOpened": "2024-12-20T23:55:37.665Z",
               "EditorCaption": ""
             },
             {
@@ -235,113 +139,29 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserCommandHandlers.cs",
+              "DocumentMoniker": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Core\\Features\\User\\Commands\\Handlers\\UserCommandHandlers.cs",
+              "RelativeDocumentMoniker": "SchoolSystem_Core\\Features\\User\\Commands\\Handlers\\UserCommandHandlers.cs",
+              "ToolTip": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Core\\Features\\User\\Commands\\Handlers\\UserCommandHandlers.cs",
+              "RelativeToolTip": "SchoolSystem_Core\\Features\\User\\Commands\\Handlers\\UserCommandHandlers.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAcwEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-20T23:51:28.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "AddStudentValidator.cs",
-              "DocumentMoniker": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Core\\Features\\Students\\Commands\\Validations\\AddStudentValidator.cs",
-              "RelativeDocumentMoniker": "SchoolSystem_Core\\Features\\Students\\Commands\\Validations\\AddStudentValidator.cs",
-              "ToolTip": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Core\\Features\\Students\\Commands\\Validations\\AddStudentValidator.cs",
-              "RelativeToolTip": "SchoolSystem_Core\\Features\\Students\\Commands\\Validations\\AddStudentValidator.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAcwEQAAAAAAAAAAAAAAA==",
+              "Title": "SharedResourcesKeys.cs",
+              "DocumentMoniker": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Core\\SharedResources\\SharedResourcesKeys.cs",
+              "RelativeDocumentMoniker": "SchoolSystem_Core\\SharedResources\\SharedResourcesKeys.cs",
+              "ToolTip": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Core\\SharedResources\\SharedResourcesKeys.cs",
+              "RelativeToolTip": "SchoolSystem_Core\\SharedResources\\SharedResourcesKeys.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABgAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-20T13:21:41.512Z",
+              "WhenOpened": "2024-12-20T23:53:36.998Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystemAPI\\Program.cs",
-              "RelativeDocumentMoniker": "SchoolSystemAPI\\Program.cs",
-              "ToolTip": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystemAPI\\Program.cs",
-              "RelativeToolTip": "SchoolSystemAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T23:59:37.293Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "DepartmentProfile.cs",
-              "DocumentMoniker": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Core\\Mapping\\Departments\\DepartmentProfile.cs",
-              "RelativeDocumentMoniker": "SchoolSystem_Core\\Mapping\\Departments\\DepartmentProfile.cs",
-              "ToolTip": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Core\\Mapping\\Departments\\DepartmentProfile.cs",
-              "RelativeToolTip": "SchoolSystem_Core\\Mapping\\Departments\\DepartmentProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T23:24:22.789Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "GetDepartmentByIdMapping.cs",
-              "DocumentMoniker": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Core\\Mapping\\Departments\\QueryMapping\\GetDepartmentByIdMapping.cs",
-              "RelativeDocumentMoniker": "SchoolSystem_Core\\Mapping\\Departments\\QueryMapping\\GetDepartmentByIdMapping.cs",
-              "ToolTip": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Core\\Mapping\\Departments\\QueryMapping\\GetDepartmentByIdMapping.cs",
-              "RelativeToolTip": "SchoolSystem_Core\\Mapping\\Departments\\QueryMapping\\GetDepartmentByIdMapping.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAowB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T22:56:08.402Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Router.cs",
-              "DocumentMoniker": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSyayem_Data\\AppMetaData\\Router.cs",
-              "RelativeDocumentMoniker": "SchoolSyayem_Data\\AppMetaData\\Router.cs",
-              "ToolTip": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSyayem_Data\\AppMetaData\\Router.cs",
-              "RelativeToolTip": "SchoolSyayem_Data\\AppMetaData\\Router.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T22:43:24.936Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "InstructorRepository.cs",
-              "DocumentMoniker": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Infrastructure\\Repositories\\InstructorRepository.cs",
-              "RelativeDocumentMoniker": "SchoolSystem_Infrastructure\\Repositories\\InstructorRepository.cs",
-              "ToolTip": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Infrastructure\\Repositories\\InstructorRepository.cs",
-              "RelativeToolTip": "SchoolSystem_Infrastructure\\Repositories\\InstructorRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T21:03:16.911Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "StudentsRepository.cs",
-              "DocumentMoniker": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Infrastructure\\Repositories\\StudentsRepository.cs",
-              "RelativeDocumentMoniker": "SchoolSystem_Infrastructure\\Repositories\\StudentsRepository.cs",
-              "ToolTip": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Infrastructure\\Repositories\\StudentsRepository.cs",
-              "RelativeToolTip": "SchoolSystem_Infrastructure\\Repositories\\StudentsRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T21:01:58.394Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "DepartmentRepository.cs",
-              "DocumentMoniker": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Infrastructure\\Repositories\\DepartmentRepository.cs",
-              "RelativeDocumentMoniker": "SchoolSystem_Infrastructure\\Repositories\\DepartmentRepository.cs",
-              "ToolTip": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Infrastructure\\Repositories\\DepartmentRepository.cs",
-              "RelativeToolTip": "SchoolSystem_Infrastructure\\Repositories\\DepartmentRepository.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T20:53:22.225Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ApplicationDBContext.cs",
-              "DocumentMoniker": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Infrastructure\\Context\\ApplicationDBContext.cs",
-              "RelativeDocumentMoniker": "SchoolSystem_Infrastructure\\Context\\ApplicationDBContext.cs",
-              "ToolTip": "D:\\DotNet\\Clean Architecture\\SchoolSystemAPI\\SchoolSystem_Infrastructure\\Context\\ApplicationDBContext.cs",
-              "RelativeToolTip": "SchoolSystem_Infrastructure\\Context\\ApplicationDBContext.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABoAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T20:33:14.762Z"
             }
           ]
         },

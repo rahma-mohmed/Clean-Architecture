@@ -10,6 +10,7 @@
 		public const string BadRequest = "BadRequest";
 		public const string Unprocessable = "Unprocessable";
 		public const string Created = "Created";
+		public const string Updated = "Updated";
 		public const string NotEmpty = "NotEmpty";
 		public const string Exist = "Exist";
 		public const string UpdateSuccess = "UpdateSuccess";
@@ -21,5 +22,6 @@
 		public const string EmailExist = "EmailExist";
 		public const string UserNameExist = "UserNameExist";
 		public const string RegisterFaild = "RegisterFaild";
+		public const string UpdateFailed = "UpdateFailed";
 	}
 }

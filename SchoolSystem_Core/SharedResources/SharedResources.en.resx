@@ -174,6 +174,12 @@
   <data name="Unprocessable " xml:space="preserve">
     <value>Unprocessable Entity</value>
   </data>
+  <data name="Updated" xml:space="preserve">
+    <value>Object updated successfully</value>
+  </data>
+  <data name="UpdateFailed" xml:space="preserve">
+    <value>Object update Failed </value>
+  </data>
   <data name="UpdateSuccess" xml:space="preserve">
     <value>Updated Successfully</value>
   </data>

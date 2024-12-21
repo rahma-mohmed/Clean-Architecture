@@ -146,13 +146,6 @@ C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\
 C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\MediatR.Contracts.dll
 C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\AutoMapper.dll
 C:\Users\3ML4Ever\source\repos\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\SchoolSystemAPI.csproj.AssemblyReference.cache
-D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\SchoolSystemAPI.GeneratedMSBuildEditorConfig.editorconfig
-D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\SchoolSystemAPI.AssemblyInfoInputs.cache
-D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\SchoolSystemAPI.AssemblyInfo.cs
-D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\SchoolSystemAPI.csproj.CoreCompileInputs.cache
-D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\SchoolSystemAPI.MvcApplicationPartsAssemblyInfo.cache
-D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\SchoolSystemAPI.sourcelink.json
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\appsettings.Development.json
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\appsettings.json
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\SchoolSystemAPI.staticwebassets.endpoints.json
@@ -170,6 +163,9 @@ D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\Fl
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\Humanizer.dll
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\MediatR.dll
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\MediatR.Contracts.dll
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
@@ -181,7 +177,16 @@ D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\Mi
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\Microsoft.Extensions.Localization.Abstractions.dll
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\Microsoft.Identity.Client.dll
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
@@ -283,7 +288,16 @@ D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\Sc
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\SchoolSystem_Data.pdb
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\SchoolSystem_Infrastructure.pdb
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\SchoolSystem_Service.pdb
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\ar\SchoolSystem_Core.resources.dll
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\en\SchoolSystem_Core.resources.dll
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\SchoolSystemAPI.csproj.AssemblyReference.cache
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\SchoolSystemAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\SchoolSystemAPI.AssemblyInfoInputs.cache
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\SchoolSystemAPI.AssemblyInfo.cs
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\SchoolSystemAPI.csproj.CoreCompileInputs.cache
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\SchoolSystemAPI.MvcApplicationPartsAssemblyInfo.cs
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\SchoolSystemAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\SchoolSystemAPI.sourcelink.json
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\scopedcss\bundle\SchoolSystemAPI.styles.css
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\staticwebassets.build.json
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\staticwebassets.development.json
@@ -301,6 +315,3 @@ D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\re
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\SchoolSystemAPI.pdb
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\SchoolSystemAPI.genruntimeconfig.cache
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\ref\SchoolSystemAPI.dll
-D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\Microsoft.Extensions.Localization.Abstractions.dll
-D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\en\SchoolSystem_Core.resources.dll
-D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\ar\SchoolSystem_Core.resources.dll

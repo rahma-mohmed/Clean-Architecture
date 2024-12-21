@@ -1,13 +1,16 @@
 ﻿using AutoMapper;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Localization;
 using SchoolSystem_Core.Basis;
 using SchoolSystem_Core.Features.User.Commands.Models;
 
 namespace SchoolSystem_Core.Features.User.Commands.Handlers
 {
-	public class UserCommandHandlers : ResponseHandler, IRequestHandler<AddUserCommand, Response<string>>
+	public class UserCommandHandlers : ResponseHandler
+		, IRequestHandler<AddUserCommand, Response<string>>
+		, IRequestHandler<UpdateUserCommand, Response<string>>
 	{
 		#region Fields
 		private readonly IMapper _mapper;
@@ -50,6 +53,25 @@ namespace SchoolSystem_Core.Features.User.Commands.Handlers
 			if (!createResult.Succeeded) return BadRequest<string>($"{_stringLocalizer[SharedResources.SharedResourcesKeys.RegisterFaild]}, {createResult.Errors.FirstOrDefault().Description}");
 
 			return Created("");
+		}
+
+		public async Task<Response<string>> Handle(UpdateUserCommand request, CancellationToken cancellationToken)
+		{
+			var user = await _userManager.Users.FirstOrDefaultAsync(x => x.Id == request.Id);
+			if (user == null)
+			{
+				return NotFound<string>(_stringLocalizer[SharedResources.SharedResourcesKeys.NotFound]);
+			}
+			var newUser = _mapper.Map(request, user);
+
+			var res = await _userManager.UpdateAsync(newUser);
+
+			if (res.Succeeded)
+			{
+				return Success($"{_stringLocalizer[SharedResources.SharedResourcesKeys.Updated]}");
+			}
+
+			return BadRequest<string>(_stringLocalizer[SharedResources.SharedResourcesKeys.UpdateFailed]);
 		}
 		#endregion
 	}

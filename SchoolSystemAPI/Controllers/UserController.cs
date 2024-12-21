@@ -9,13 +9,6 @@ namespace SchoolSystemAPI.Controllers
 	[ApiController]
 	public class UserController : AppControllerBase
 	{
-		[HttpPost(Router.UserRouting.Create)]
-		public async Task<IActionResult> Create([FromBody] AddUserCommand command)
-		{
-			var response = await Mediator.Send(command);
-			return NewResult(response);
-		}
-
 		[HttpGet(Router.UserRouting.Paginated)]
 		public async Task<ActionResult> Paginated([FromQuery] GetUserListQuery query)
 		{
@@ -30,8 +23,8 @@ namespace SchoolSystemAPI.Controllers
 			return NewResult(response);
 		}
 
-		[HttpPut(Router.UserRouting.Edit)]
-		public async Task<ActionResult> Edit([FromBody] UpdateUserCommand command)
+		[HttpPost(Router.UserRouting.Create)]
+		public async Task<IActionResult> Create([FromBody] AddUserCommand command)
 		{
 			var response = await Mediator.Send(command);
 			return NewResult(response);
@@ -41,6 +34,20 @@ namespace SchoolSystemAPI.Controllers
 		public async Task<ActionResult> Delete([FromRoute] int id)
 		{
 			var response = await Mediator.Send(new DeleteUserCommand(id));
+			return NewResult(response);
+		}
+
+		[HttpPut(Router.UserRouting.Edit)]
+		public async Task<ActionResult> Edit([FromBody] UpdateUserCommand command)
+		{
+			var response = await Mediator.Send(command);
+			return NewResult(response);
+		}
+
+		[HttpPut(Router.UserRouting.Password)]
+		public async Task<ActionResult> ChangePassword([FromForm] ChangeUserPasswordCommand command)
+		{
+			var response = await Mediator.Send(command);
 			return NewResult(response);
 		}
 	}

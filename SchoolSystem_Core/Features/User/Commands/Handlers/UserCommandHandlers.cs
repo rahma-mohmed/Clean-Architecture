@@ -12,6 +12,7 @@ namespace SchoolSystem_Core.Features.User.Commands.Handlers
 		, IRequestHandler<AddUserCommand, Response<string>>
 		, IRequestHandler<UpdateUserCommand, Response<string>>
 		, IRequestHandler<DeleteUserCommand, Response<string>>
+		, IRequestHandler<ChangeUserPasswordCommand, Response<string>>
 	{
 		#region Fields
 		private readonly IMapper _mapper;
@@ -67,6 +68,12 @@ namespace SchoolSystem_Core.Features.User.Commands.Handlers
 
 			var res = await _userManager.UpdateAsync(newUser);
 
+			var userByName = await _userManager.Users.FirstOrDefaultAsync(x => (x.UserName == newUser.UserName && x.Id != newUser.Id));
+			if (userByName != null)
+			{
+				return BadRequest<string>(_stringLocalizer[SharedResources.SharedResourcesKeys.UserNameExist]);
+			}
+
 			if (res.Succeeded)
 			{
 				return Success($"{_stringLocalizer[SharedResources.SharedResourcesKeys.Updated]}");
@@ -86,6 +93,30 @@ namespace SchoolSystem_Core.Features.User.Commands.Handlers
 			if (res.Succeeded) return Success($"{_stringLocalizer[SharedResources.SharedResourcesKeys.DeletedSuccess]}");
 
 			return BadRequest<string>(_stringLocalizer[SharedResources.SharedResourcesKeys.DeletedFailed]);
+		}
+
+		public async Task<Response<string>> Handle(ChangeUserPasswordCommand request, CancellationToken cancellationToken)
+		{
+			var user = await _userManager.FindByIdAsync(request.Id.ToString());
+
+			if (user == null) return NotFound<string>();
+
+			var oldPassword = await _userManager.CheckPasswordAsync(user, request.OldPassword);
+
+			if (!oldPassword)
+			{
+				return BadRequest<string>(_stringLocalizer[SharedResources.SharedResourcesKeys.InvalidOldPassword]);
+			}
+
+			var res = await _userManager.ChangePasswordAsync(user, request.OldPassword, request.NewPassword);
+
+			//var password = await _userManager.HasPasswordAsync(user);
+			//_userManager.RemovePasswordAsync(user);
+			//_userManager.AddPasswordAsync(user , request.NewPassword);
+
+			if (res.Succeeded) return Success($"{_stringLocalizer[SharedResources.SharedResourcesKeys.ChangePasswoerdSuccess]}");
+
+			return BadRequest<string>(_stringLocalizer[SharedResources.SharedResourcesKeys.ChangePasswoerdFaild]);
 		}
 		#endregion
 	}

@@ -9,18 +9,18 @@ namespace SchoolSystemAPI.Controllers
 	[ApiController]
 	public class DepartmentController : AppControllerBase
 	{
-		[HttpGet(Router.DepartmentRouting.GetById)]
-		public async Task<ActionResult> GetDepartmentByIdTask([FromRoute] int id)
-		{
-			var response = await Mediator.Send(new GetDepartmentByIdQuery(id));
-			return NewResult(response);
-		}
-
 		[HttpGet(Router.DepartmentRouting.Paginated)]
 		public async Task<ActionResult> Paginated([FromQuery] GetDepartmentListQuery query)
 		{
 			var response = await Mediator.Send(query);
 			return Ok(response);
+		}
+
+		[HttpGet(Router.DepartmentRouting.GetById)]
+		public async Task<ActionResult> GetDepartmentByIdTask([FromRoute] int id)
+		{
+			var response = await Mediator.Send(new GetDepartmentByIdQuery(id));
+			return NewResult(response);
 		}
 
 		[HttpPost(Router.DepartmentRouting.Create)]

@@ -37,17 +37,17 @@ namespace SchoolSystemAPI.Controllers
 			return NewResult(response);
 		}
 
-		[HttpPut(Router.StudentRouting.Edit)]
-		public async Task<ActionResult> Edit([FromBody] EditStudentCommand command)
-		{
-			var response = await Mediator.Send(command);
-			return NewResult(response);
-		}
-
 		[HttpDelete(Router.StudentRouting.Delete)]
 		public async Task<ActionResult> Delete([FromRoute] int id)
 		{
 			var response = await Mediator.Send(new DeleteStudentCommand(id));
+			return NewResult(response);
+		}
+
+		[HttpPut(Router.StudentRouting.Edit)]
+		public async Task<ActionResult> Edit([FromBody] EditStudentCommand command)
+		{
+			var response = await Mediator.Send(command);
 			return NewResult(response);
 		}
 	}

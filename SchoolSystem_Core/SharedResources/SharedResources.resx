@@ -123,6 +123,15 @@
   <data name="BadRequest" xml:space="preserve">
     <value>Bad Request</value>
   </data>
+  <data name="ChangePasswoerdFaild" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ChangePasswoerdSuccess" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ConfirmNewPassword" xml:space="preserve">
+    <value />
+  </data>
   <data name="Created" xml:space="preserve">
     <value>Created</value>
   </data>
@@ -153,6 +162,9 @@
   <data name="InstructorIdNotExist" xml:space="preserve">
     <value />
   </data>
+  <data name="InvalidOldPassword" xml:space="preserve">
+    <value />
+  </data>
   <data name="MaxLengthIs100" xml:space="preserve">
     <value />
   </data>
@@ -165,7 +177,13 @@
   <data name="NotFound" xml:space="preserve">
     <value>Not Found</value>
   </data>
+  <data name="Password" xml:space="preserve">
+    <value />
+  </data>
   <data name="PasswordMatch" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PasswordNotCorrect" xml:space="preserve">
     <value />
   </data>
   <data name="RegisterFaild" xml:space="preserve">
@@ -173,6 +191,9 @@
   </data>
   <data name="Required" xml:space="preserve">
     <value>Required</value>
+  </data>
+  <data name="SignInSuccess" xml:space="preserve">
+    <value />
   </data>
   <data name="Success" xml:space="preserve">
     <value />
@@ -192,7 +213,13 @@
   <data name="UpdateSuccess" xml:space="preserve">
     <value />
   </data>
+  <data name="UserName" xml:space="preserve">
+    <value />
+  </data>
   <data name="UserNameExist" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UserNameNotExist" xml:space="preserve">
     <value />
   </data>
 </root>

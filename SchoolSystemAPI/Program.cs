@@ -33,7 +33,7 @@ namespace SchoolSystemAPI
 
 			#region Dependency Injection
 			builder.Services.AddInfrastructureDependencies()
-							.AddApplicationServiceseRegistration()
+							.AddApplicationServiceseRegistration(builder.Configuration)
 							.AddServiceDependencies()
 							.AddCoreDependencies();
 			#endregion
@@ -92,6 +92,8 @@ namespace SchoolSystemAPI
 			app.UseHttpsRedirection();
 
 			app.UseCors(CORS);
+
+			app.UseAuthentication();
 
 			app.UseAuthorization();
 

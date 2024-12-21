@@ -20,9 +20,17 @@
 		public const string PasswordMatch = "PasswordMatch";
 		public const string EmailExist = "EmailExist";
 		public const string UserNameExist = "UserNameExist";
+		public const string UserNameNotExist = "UserNameNotExist";
 		public const string RegisterFaild = "RegisterFaild";
 		public const string UpdateFailed = "UpdateFailed";
 		public const string DeletedFailed = "DeletedFailed";
 		public const string InstructorIdNotExist = "InstructorIdNotExist";
+		public const string ChangePasswoerdSuccess = "ChangePasswoerdSuccess";
+		public const string ChangePasswoerdFaild = "ChangePasswoerdFaild";
+		public const string InvalidOldPassword = "InvalidOldPassword";
+		public const string UserName = "UserName";
+		public const string Password = "Password";
+		public const string PasswordNotCorrect = "PasswordNotCorrect";
+		public const string SignInSuccess = "SignInSuccess";
 	}
 }

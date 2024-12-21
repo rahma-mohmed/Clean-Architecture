@@ -12,6 +12,7 @@ namespace SchoolSystem_Service
 			services.AddTransient<IDepartmentService, DepartmentService>();
 			services.AddTransient<IInstructorService, InstructorService>();
 			services.AddTransient<ISubjectService, SubjectService>();
+			services.AddTransient<IAuthenticationService, AuthenticationService>();
 			return services;
 		}
 	}

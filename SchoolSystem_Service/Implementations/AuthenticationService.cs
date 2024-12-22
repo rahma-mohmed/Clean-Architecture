@@ -1,6 +1,8 @@
 ﻿using Microsoft.IdentityModel.Tokens;
+using SchoolSystem_Data.Entities;
 using SchoolSystem_Data.Entities.Identity;
 using SchoolSystem_Data.Helper;
+using SchoolSystem_Infrastructure.IRepositories;
 using SchoolSystem_Service.IService;
 using System.Collections.Concurrent;
 using System.IdentityModel.Tokens.Jwt;
@@ -15,13 +17,15 @@ namespace SchoolSystem_Service.Implementations
 		#region Fields
 		private readonly JwtSettings _jwtSettings;
 		private readonly ConcurrentDictionary<string, RefreshToken> _refreshTokenConcurrent;
+		private readonly IRefreshTokenRepository _refreshTokenRepository;
 		#endregion
 
 		#region Constructor
-		public AuthenticationService(JwtSettings jwtSettings, ConcurrentDictionary<string, RefreshToken> refreshToken)
+		public AuthenticationService(IRefreshTokenRepository refreshTokenRepository, JwtSettings jwtSettings, ConcurrentDictionary<string, RefreshToken> refreshToken)
 		{
 			_refreshTokenConcurrent = new ConcurrentDictionary<string, RefreshToken>();
 			_jwtSettings = jwtSettings;
+			_refreshTokenRepository = refreshTokenRepository;
 		}
 		#endregion
 
@@ -33,7 +37,7 @@ namespace SchoolSystem_Service.Implementations
 		//expire
 		//credentionals => secret key , algorithm
 
-		public Task<JwtAuthResult> GetJWTToken(User user)
+		public async Task<JwtAuthResult> GetJWTToken(User user)
 		{
 			var claims = new List<Claim>
 			{
@@ -57,15 +61,27 @@ namespace SchoolSystem_Service.Implementations
 			};
 
 			_refreshTokenConcurrent.AddOrUpdate(refreshtoken.TokenString, refreshtoken, (s, t) => refreshtoken);
+
+			var userRefreshToken = new UserRefreshToken()
+			{
+				AddedTime = DateTime.Now,
+				ExpiryDate = refreshtoken.ExpireAt,
+				UserId = user.Id,
+				IsUsed = false,
+				IsRevoked = false,
+				JwtId = token.Id,
+				RefreshToken = refreshtoken.TokenString,
+				JWTToken = accessToken
+			};
+
+			await _refreshTokenRepository.AddAsync(userRefreshToken);
 			#endregion
 
-			return Task.FromResult(
-				new JwtAuthResult
-				{
-					AccessToken = accessToken,
-					UserResfereshToken = refreshtoken
-				}
-			);
+			return new JwtAuthResult
+			{
+				AccessToken = accessToken,
+				UserResfereshToken = refreshtoken
+			};
 		}
 
 		private string GenerateRefreshToken()

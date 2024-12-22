@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SchoolSystem_Infrastructure.Context;
 
@@ -11,9 +12,11 @@ using SchoolSystem_Infrastructure.Context;
 namespace SchoolSystem_Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    partial class ApplictionDBContextModelSnapshot : ModelSnapshot
+    [Migration("20241221234535_UpdateRefreshTokenTable")]
+    partial class UpdateRefreshTokenTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -408,7 +411,7 @@ namespace SchoolSystem_Infrastructure.Migrations
                     b.ToTable("Subjects");
                 });
 
-            modelBuilder.Entity("SchoolSystem_Data.Entities.UserRefreshToken", b =>
+            modelBuilder.Entity("SchoolSystem_Data.Entities.UpdateRefreshToken", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -427,9 +430,6 @@ namespace SchoolSystem_Infrastructure.Migrations
 
                     b.Property<bool>("IsUsed")
                         .HasColumnType("bit");
-
-                    b.Property<string>("JWTToken")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("JwtId")
                         .HasColumnType("nvarchar(max)");
@@ -592,10 +592,10 @@ namespace SchoolSystem_Infrastructure.Migrations
                     b.Navigation("Subject");
                 });
 
-            modelBuilder.Entity("SchoolSystem_Data.Entities.UserRefreshToken", b =>
+            modelBuilder.Entity("SchoolSystem_Data.Entities.UpdateRefreshToken", b =>
                 {
                     b.HasOne("SchoolSystem_Data.Entities.Identity.User", "User")
-                        .WithMany("UserRefreshTokens")
+                        .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -610,11 +610,6 @@ namespace SchoolSystem_Infrastructure.Migrations
                     b.Navigation("Instructors");
 
                     b.Navigation("Students");
-                });
-
-            modelBuilder.Entity("SchoolSystem_Data.Entities.Identity.User", b =>
-                {
-                    b.Navigation("UserRefreshTokens");
                 });
 
             modelBuilder.Entity("SchoolSystem_Data.Entities.Instructor", b =>

@@ -8,7 +8,9 @@ using SchoolSystem_Service.IService;
 
 namespace SchoolSystem_Core.Features.Authentication.Commands.Handlers
 {
-	public class AuthenticationCommandHandler : ResponseHandler, IRequestHandler<SignInCommand, Response<JwtAuthResult>>
+	public class AuthenticationCommandHandler : ResponseHandler
+		, IRequestHandler<SignInCommand, Response<JwtAuthResult>>
+		, IRequestHandler<RefreshTokenCommand, Response<JwtAuthResult>>
 	{
 
 		#region Fields
@@ -41,6 +43,12 @@ namespace SchoolSystem_Core.Features.Authentication.Commands.Handlers
 			var accessToken = await _authorizationService.GetJWTToken(user);
 
 			return Success(accessToken);
+		}
+
+		public async Task<Response<JwtAuthResult>> Handle(RefreshTokenCommand request, CancellationToken cancellationToken)
+		{
+			var res = await _authorizationService.GetRefreshToken(request.AccessToken, request.RefreshToken);
+			return Success(res);
 		}
 		#endregion
 	}

@@ -42,7 +42,7 @@ namespace SchoolSystem_Infrastructure
 			{
 				options.RequireHttpsMetadata = false;
 				options.SaveToken = true;
-				options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+				options.TokenValidationParameters = new TokenValidationParameters
 				{
 					ValidateIssuer = jwtSettings.ValidateIssuer,
 					ValidIssuers = new[] { jwtSettings.Issuer },

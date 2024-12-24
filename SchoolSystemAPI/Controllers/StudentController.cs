@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using SchoolSystem_Core.Features.Students.Commands.Models;
 using SchoolSystem_Core.Features.Students.Queries.Models;
 using SchoolSystem_Data.AppMetaData;
@@ -9,6 +10,7 @@ namespace SchoolSystemAPI.Controllers
 	[ApiController]
 	public class StudentController : AppControllerBase
 	{
+		[Authorize]
 		[HttpGet(Router.StudentRouting.List)]
 		public async Task<ActionResult> GetStudentTask()
 		{
@@ -16,6 +18,7 @@ namespace SchoolSystemAPI.Controllers
 			return NewResult(response);
 		}
 
+		[Authorize]
 		[HttpGet(Router.StudentRouting.Paginated)]
 		public async Task<ActionResult> Paginated([FromQuery] GetStudentPagintedListQuery query)
 		{

@@ -120,8 +120,20 @@
   <data name="Address" xml:space="preserve">
     <value>Address</value>
   </data>
+  <data name="AlgorithmIsWrong" xml:space="preserve">
+    <value>Invalid token, the algorithm is incorrect.</value>
+  </data>
   <data name="BadRequest" xml:space="preserve">
     <value>Bad Request</value>
+  </data>
+  <data name="ChangePasswoerdFaild" xml:space="preserve">
+    <value>Change Password Operation Faild</value>
+  </data>
+  <data name="ChangePasswoerdSuccess" xml:space="preserve">
+    <value>Password Change Successfully</value>
+  </data>
+  <data name="ConfirmNewPassword" xml:space="preserve">
+    <value>Confirm New Password</value>
   </data>
   <data name="Created" xml:space="preserve">
     <value>Created Successfully</value>
@@ -150,8 +162,17 @@
   <data name="Exist" xml:space="preserve">
     <value>Object is already exist</value>
   </data>
+  <data name="ExpiredRefrshToken" xml:space="preserve">
+    <value>The refresh token is expired</value>
+  </data>
+  <data name="NotExpiredToken" xml:space="preserve">
+    <value>The token is not expired.</value>
+  </data>
   <data name="InstructorIdNotExist" xml:space="preserve">
     <value>Instructor Id does not exist</value>
+  </data>
+  <data name="InvalidOldPassword" xml:space="preserve">
+    <value>The old password is incorrect.</value>
   </data>
   <data name="MaxLengthIs100" xml:space="preserve">
     <value>Please ensure field does not exceed 100 characters</value>
@@ -165,14 +186,26 @@
   <data name="NotFound" xml:space="preserve">
     <value>Object Is Not Found</value>
   </data>
+  <data name="NotFoundRefrshToken" xml:space="preserve">
+    <value>The refresh token is not found.</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
   <data name="PasswordMatch" xml:space="preserve">
     <value>Password does not match confirm password</value>
+  </data>
+  <data name="PasswordNotCorrect" xml:space="preserve">
+    <value>Password is not correct</value>
   </data>
   <data name="RegisterFaild" xml:space="preserve">
     <value>Registration Failed</value>
   </data>
   <data name="Required" xml:space="preserve">
     <value>This Faild Is Required</value>
+  </data>
+  <data name="SignInSuccess" xml:space="preserve">
+    <value>Login Successfully</value>
   </data>
   <data name="Success" xml:space="preserve">
     <value>Success</value>
@@ -192,7 +225,16 @@
   <data name="UpdateSuccess" xml:space="preserve">
     <value>Updated Successfully</value>
   </data>
+  <data name="UserName" xml:space="preserve">
+    <value>User Name</value>
+  </data>
   <data name="UserNameExist" xml:space="preserve">
     <value>UserName is already exist</value>
+  </data>
+  <data name="UserNameNotExist" xml:space="preserve">
+    <value>User name does not exist.</value>
+  </data>
+  <data name="UserNotFound" xml:space="preserve">
+    <value>The user is not found.</value>
   </data>
 </root>

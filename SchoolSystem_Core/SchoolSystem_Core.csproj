@@ -45,9 +45,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Departments\Commands\Handlers\" />
-    <Folder Include="Features\Departments\Commands\Models\" />
-    <Folder Include="Features\Departments\Commands\Validators\" />
+    <Folder Include="Features\Authentication\Queries\" />
     <Folder Include="Features\Instructors\Commands\Handlers\" />
     <Folder Include="Features\Instructors\Commands\Models\" />
     <Folder Include="Features\Instructors\Commands\Validators\" />
@@ -60,7 +58,6 @@
     <Folder Include="Features\Subjects\Queries\Handlers\" />
     <Folder Include="Features\Subjects\Queries\Models\" />
     <Folder Include="Features\Subjects\Queries\Response\" />
-    <Folder Include="Mapping\Departments\CommandMapping\" />
   </ItemGroup>
 
 </Project>

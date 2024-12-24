@@ -25,6 +25,7 @@ namespace SchoolSystem_Infrastructure.Context
 		public DbSet<Subject> Subjects { get; set; }
 		public DbSet<DepartmentSubject> DepartmentSubjects { get; set; }
 		public DbSet<StudentSubject> StudentSubjects { get; set; }
+		public DbSet<UserRefreshToken> UpdateRefreshTokens { get; set; }
 
 		//protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		//{

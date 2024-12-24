@@ -120,6 +120,9 @@
   <data name="Address" xml:space="preserve">
     <value>العنوان</value>
   </data>
+  <data name="AlgorithmIsWrong" xml:space="preserve">
+    <value>الرمز غير صالح، الخوارزمية غير صحيحة.</value>
+  </data>
   <data name="BadRequest" xml:space="preserve">
     <value>طلب غير صالح</value>
   </data>
@@ -159,6 +162,12 @@
   <data name="Exist" xml:space="preserve">
     <value>هذا الحقل موجود بالفعل</value>
   </data>
+  <data name="ExpiredRefrshToken" xml:space="preserve">
+    <value>رمز التحديث انتهت صلاحيته</value>
+  </data>
+  <data name="NotExpiredToken" xml:space="preserve">
+    <value>الرمز لم ينتهِ صلاحيته</value>
+  </data>
   <data name="InstructorIdNotExist" xml:space="preserve">
     <value>معرف المدرب غير موجود</value>
   </data>
@@ -176,6 +185,9 @@
   </data>
   <data name="NotFound" xml:space="preserve">
     <value>غير موجود</value>
+  </data>
+  <data name="NotFoundRefrshToken" xml:space="preserve">
+    <value>رمز التحديث غير موجود</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>كلمه المرور</value>
@@ -221,5 +233,8 @@
   </data>
   <data name="UserNameNotExist" xml:space="preserve">
     <value>اسم المستخدم غير موجود</value>
+  </data>
+  <data name="UserNotFound" xml:space="preserve">
+    <value>المستخدم غير موجود.</value>
   </data>
 </root>

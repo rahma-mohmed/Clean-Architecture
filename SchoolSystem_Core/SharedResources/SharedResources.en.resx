@@ -120,6 +120,9 @@
   <data name="Address" xml:space="preserve">
     <value>Address</value>
   </data>
+  <data name="AlgorithmIsWrong" xml:space="preserve">
+    <value>Invalid token, the algorithm is incorrect.</value>
+  </data>
   <data name="BadRequest" xml:space="preserve">
     <value>Bad Request</value>
   </data>
@@ -159,6 +162,12 @@
   <data name="Exist" xml:space="preserve">
     <value>Object is already exist</value>
   </data>
+  <data name="ExpiredRefrshToken" xml:space="preserve">
+    <value>The refresh token is expired</value>
+  </data>
+  <data name="NotExpiredToken" xml:space="preserve">
+    <value>The token is not expired.</value>
+  </data>
   <data name="InstructorIdNotExist" xml:space="preserve">
     <value>Instructor Id does not exist</value>
   </data>
@@ -176,6 +185,9 @@
   </data>
   <data name="NotFound" xml:space="preserve">
     <value>Object Is Not Found</value>
+  </data>
+  <data name="NotFoundRefrshToken" xml:space="preserve">
+    <value>The refresh token is not found.</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Password</value>
@@ -221,5 +233,8 @@
   </data>
   <data name="UserNameNotExist" xml:space="preserve">
     <value>User name does not exist.</value>
+  </data>
+  <data name="UserNotFound" xml:space="preserve">
+    <value>The user is not found.</value>
   </data>
 </root>

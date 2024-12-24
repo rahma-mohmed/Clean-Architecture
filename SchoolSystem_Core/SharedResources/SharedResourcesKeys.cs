@@ -32,5 +32,10 @@
 		public const string Password = "Password";
 		public const string PasswordNotCorrect = "PasswordNotCorrect";
 		public const string SignInSuccess = "SignInSuccess";
+		public const string AlgorithmIsWrong = "AlgorithmIsWrong";
+		public const string NotExpiredToken = "NotExpiredToken";
+		public const string ExpiredRefrshToken = "ExpiredRefrshToken";
+		public const string NotFoundRefrshToken = "NotFoundRefrshToken";
+		public const string UserNotFound = "UserNotFound";
 	}
 }

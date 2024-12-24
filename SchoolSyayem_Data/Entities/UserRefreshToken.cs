@@ -24,7 +24,7 @@ namespace SchoolSystem_Data.Entities
 
 		public bool IsUsed { get; set; }
 
-		public DateTime ExpiryDate { get; set; }
+		public DateTime? ExpiryDate { get; set; }
 
 		[InverseProperty(nameof(User.UserRefreshTokens))]
 		public virtual User? User { get; set; }

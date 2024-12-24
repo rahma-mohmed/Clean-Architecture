@@ -97,44 +97,48 @@ namespace SchoolSystem_Service.Implementations
 			return Convert.ToBase64String(randomumber);
 		}
 
-		public async Task<JwtAuthResult> GetRefreshToken(string accessToken, string refreshToken)
+		public async Task<JwtAuthResult> GetRefreshToken(User user, string accessToken, string refreshToken, DateTime? expiryDate)
 		{
 			//Read Token Get Claims
-			var token = ReadJwtToken(accessToken);
+			// Move to handler
+			//var token = ReadJwtToken(accessToken);
+
 			//Validation
-			if (token == null || !token.Header.Alg.Equals(SecurityAlgorithms.HmacSha256Signature))
-			{
-				throw new SecurityTokenException("Invalid Token, algorith is wrong");
-			}
-			if (token.ValidTo > DateTime.UtcNow)
-			{
-				throw new SecurityTokenException("Token Is Not Expired");
-			}
-			// GetUser
-			var userId = token.Claims.FirstOrDefault(x => x.Type == nameof(UserClaimsModel.Id)).Value;
-			var refreshTokenUser = await _refreshTokenRepository.GetTableNoTracking()
-				.FirstOrDefaultAsync(x => (x.JWTToken == accessToken && x.RefreshToken == refreshToken && x.UserId == int.Parse(userId)));
 
-			//check expire
-			if (refreshTokenUser.ExpiryDate < DateTime.UtcNow)
-			{
-				refreshTokenUser.IsRevoked = true;
-				refreshTokenUser.IsUsed = false;
-				await _refreshTokenRepository.UpdateAsync(refreshTokenUser);
-				throw new SecurityTokenException("Refresh Token Is Expired");
-			}
+			//if (token == null || !token.Header.Alg.Equals(SecurityAlgorithms.HmacSha256Signature))
+			//{
+			//	throw new SecurityTokenException("Invalid Token, algorith is wrong");
+			//}
+			//if (token.ValidTo > DateTime.UtcNow)
+			//{
+			//	throw new SecurityTokenException("Token Is Not Expired");
+			//}
+			//// GetUser
+			//var userId = token.Claims.FirstOrDefault(x => x.Type == nameof(UserClaimsModel.Id)).Value;
+			//var refreshTokenUser = await _refreshTokenRepository.GetTableNoTracking()
+			//	.FirstOrDefaultAsync(x => (x.JWTToken == accessToken && x.RefreshToken == refreshToken && x.UserId == int.Parse(userId)));
 
-			if (refreshTokenUser == null) throw new SecurityTokenException("Refresh Token Is Not Found");
-			//Generate token
-			var user = await _userManager.FindByIdAsync(userId);
-			if (user == null) throw new SecurityTokenException("User Is Not Found");
+			////check expire
+			//if (refreshTokenUser.ExpiryDate < DateTime.UtcNow)
+			//{
+			//	refreshTokenUser.IsRevoked = true;
+			//	refreshTokenUser.IsUsed = false;
+			//	await _refreshTokenRepository.UpdateAsync(refreshTokenUser);
+			//	throw new SecurityTokenException("Refresh Token Is Expired");
+			//}
+
+			//if (refreshTokenUser == null) throw new SecurityTokenException("Refresh Token Is Not Found");
+			////Generate token
+			//var user = await _userManager.FindByIdAsync(userId);
+			//if (user == null) throw new SecurityTokenException("User Is Not Found");
+
 
 			var (newtoken, newaccessToken) = GenerateJWTToken(user);
 
 			var refreshtoken = new RefreshToken
 			{
 				UserName = user.UserName,
-				ExpireAt = refreshTokenUser.ExpiryDate,
+				ExpireAt = expiryDate,
 				TokenString = refreshToken
 			};
 
@@ -145,7 +149,7 @@ namespace SchoolSystem_Service.Implementations
 			};
 		}
 
-		private JwtSecurityToken ReadJwtToken(string AccessToken)
+		public JwtSecurityToken ReadJwtToken(string AccessToken)
 		{
 			if (string.IsNullOrEmpty(AccessToken)) throw new ArgumentNullException(nameof(AccessToken));
 
@@ -166,7 +170,7 @@ namespace SchoolSystem_Service.Implementations
 
 			var creditional = new SigningCredentials(new SymmetricSecurityKey(Encoding.ASCII.GetBytes(_jwtSettings.Secret)), SecurityAlgorithms.HmacSha256Signature);
 
-			var token = new JwtSecurityToken(_jwtSettings.Issuer, _jwtSettings.Audience, claims, null, DateTime.UtcNow.AddMinutes(5), creditional);
+			var token = new JwtSecurityToken(_jwtSettings.Issuer, _jwtSettings.Audience, claims, null, DateTime.UtcNow.AddHours(1), creditional);
 
 			var accessToken = new JwtSecurityTokenHandler().WriteToken(token);
 
@@ -187,9 +191,11 @@ namespace SchoolSystem_Service.Implementations
 				ValidAudience = _jwtSettings.Audience,
 				ValidateLifetime = _jwtSettings.ValidateLifeTime
 			};
-			var validator = handler.ValidateToken(accessToken, paramters, out SecurityToken validatedToken);
+
 			try
 			{
+				var validator = handler.ValidateToken(accessToken, paramters, out SecurityToken validatedToken);
+
 				if (validator == null)
 				{
 					throw new SecurityTokenException("Invalid Token");
@@ -202,6 +208,38 @@ namespace SchoolSystem_Service.Implementations
 				return ex.Message;
 			}
 
+		}
+
+		public async Task<(string, DateTime?)> ValidateTokenDetails(JwtSecurityToken token, string accessToken, string refreshToken)
+		{
+			if (token == null || !token.Header.Alg.Equals(SecurityAlgorithms.HmacSha256Signature))
+			{
+				return ("Invalid Token, algorith is wrong", null);
+			}
+			if (token.ValidTo > DateTime.UtcNow)
+			{
+				return ("Token Is Not Expired", null);
+			}
+			// GetUser
+			var userId = token.Claims.FirstOrDefault(x => x.Type == nameof(UserClaimsModel.Id)).Value;
+			var refreshTokenUser = await _refreshTokenRepository.GetTableNoTracking()
+				.FirstOrDefaultAsync(x => (x.JWTToken == accessToken && x.RefreshToken == refreshToken && x.UserId == int.Parse(userId)));
+
+			//check expire
+			if (refreshTokenUser.ExpiryDate < DateTime.UtcNow)
+			{
+				refreshTokenUser.IsRevoked = true;
+				refreshTokenUser.IsUsed = false;
+				await _refreshTokenRepository.UpdateAsync(refreshTokenUser);
+				return ("Refresh Token Is Expired", null);
+			}
+
+			if (refreshTokenUser == null) return ("Refresh Token Is Not Found", null);
+			//Generate token
+			var user = await _userManager.FindByIdAsync(userId);
+			if (user == null) return ("User Is Not Found", null);
+
+			return (userId, refreshTokenUser.ExpiryDate);
 		}
 		#endregion
 	}

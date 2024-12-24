@@ -316,3 +316,4 @@ D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\Sc
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\ref\SchoolSystemAPI.dll
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Annotations.dll
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\SchoolSystemAPI.MvcApplicationPartsAssemblyInfo.cs

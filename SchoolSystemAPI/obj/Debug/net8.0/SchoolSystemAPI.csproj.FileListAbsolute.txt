@@ -295,7 +295,6 @@ D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\Sc
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\SchoolSystemAPI.AssemblyInfoInputs.cache
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\SchoolSystemAPI.AssemblyInfo.cs
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\SchoolSystemAPI.csproj.CoreCompileInputs.cache
-D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\SchoolSystemAPI.MvcApplicationPartsAssemblyInfo.cs
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\SchoolSystemAPI.MvcApplicationPartsAssemblyInfo.cache
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\SchoolSystemAPI.sourcelink.json
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\scopedcss\bundle\SchoolSystemAPI.styles.css
@@ -315,3 +314,5 @@ D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\re
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\SchoolSystemAPI.pdb
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\SchoolSystemAPI.genruntimeconfig.cache
 D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\obj\Debug\net8.0\ref\SchoolSystemAPI.dll
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\DotNet\Clean Architecture\SchoolSystemAPI\SchoolSystemAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Annotations.dll

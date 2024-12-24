@@ -42,43 +42,6 @@
         }
       }
     },
-    "/api/Authentication/RefreshToken": {
-      "post": {
-        "tags": [
-          "Authentication"
-        ],
-        "requestBody": {
-          "content": {
-            "multipart/form-data": {
-              "schema": {
-                "type": "object",
-                "properties": {
-                  "AccessToken": {
-                    "type": "string"
-                  },
-                  "RefreshToken": {
-                    "type": "string"
-                  }
-                }
-              },
-              "encoding": {
-                "AccessToken": {
-                  "style": "form"
-                },
-                "RefreshToken": {
-                  "style": "form"
-                }
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/api/Department/Paginated": {
       "get": {
         "tags": [

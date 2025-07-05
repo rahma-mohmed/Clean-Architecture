@@ -46,5 +46,10 @@
 			public const string SignIn = prefix + "/SignIn";
 			public const string RefreshToken = prefix + "/RefreshToken";
 		}
+		public static class AuthorizationsRouting
+		{
+			public const string prefix = Rule + "Authorization";
+			public const string AddRoles = prefix + "/Add";
+		}
 	}
 }

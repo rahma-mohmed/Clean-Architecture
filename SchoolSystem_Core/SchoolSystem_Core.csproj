@@ -46,6 +46,7 @@
 
   <ItemGroup>
     <Folder Include="Features\Authentication\Queries\" />
+    <Folder Include="Features\Authorization\Queries\" />
     <Folder Include="Features\Instructors\Commands\Handlers\" />
     <Folder Include="Features\Instructors\Commands\Models\" />
     <Folder Include="Features\Instructors\Commands\Validators\" />

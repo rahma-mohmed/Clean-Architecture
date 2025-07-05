@@ -36,6 +36,8 @@ namespace SchoolSystemAPI
 							.AddApplicationServiceseRegistration(builder.Configuration)
 							.AddServiceDependencies()
 							.AddCoreDependencies();
+
+
 			#endregion
 
 			#region Localization

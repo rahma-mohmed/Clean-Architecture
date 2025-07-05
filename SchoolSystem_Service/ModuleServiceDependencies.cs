@@ -15,6 +15,7 @@ namespace SchoolSystem_Service
 			services.AddTransient<IInstructorService, InstructorService>();
 			services.AddTransient<ISubjectService, SubjectService>();
 			services.AddTransient<IAuthenticationService, AuthenticationService>();
+			services.AddTransient<IAuthorizationServices, AuthorizationServices>();
 			services.AddSingleton(new ConcurrentDictionary<string, RefreshToken>());
 			return services;
 		}
